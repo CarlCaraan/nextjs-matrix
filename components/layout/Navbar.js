@@ -1,14 +1,14 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 
 // Images
 import brand from "../../public/images/landing_page/brand.png";
 
 function Navbar() {
-  // const router = useRouter();
-  // const { pathname } = router;
+  const pathname = usePathname();
 
   return (
     <>
@@ -24,20 +24,33 @@ function Navbar() {
 
           {/* Nav Links */}
           <div className="flex h-16">
-            <Link className="navlinks" href="/products">
+            <Link className="navlinks relative" href="/products">
               Products
+              <span
+                className={pathname === "/products" ? "nl-active" : ""}
+              ></span>
             </Link>
-            <Link className="navlinks" href="/">
+            <Link className="navlinks relative" href="/solutions">
               Solutions
+              <span
+                className={pathname === "/solutions" ? "nl-active" : ""}
+              ></span>
             </Link>
-            <Link className="navlinks" href="/">
+            <Link className="navlinks relative" href="/careers">
               Careers
+              <span
+                className={pathname === "/careers" ? "nl-active" : ""}
+              ></span>
             </Link>
-            <Link className="navlinks" href="/">
+            <Link className="navlinks relative" href="/support">
               Support
+              <span
+                className={pathname === "/support" ? "nl-active" : ""}
+              ></span>
             </Link>
-            <Link className="navlinks" href="/">
+            <Link className="navlinks relative" href="/about">
               About Matrix
+              <span className={pathname === "/about" ? "nl-active" : ""}></span>
             </Link>
           </div>
 
