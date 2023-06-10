@@ -13,6 +13,7 @@ module.exports = {
         light: "#ffffff",
         panel: "#E4E4E4",
         primary: "#80FB8D",
+        secondary: "#56B4D3",
         fontSoft: "#323232",
         card: "#F4F4F4",
       },

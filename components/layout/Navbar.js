@@ -6,7 +6,7 @@ function Navbar() {
     <>
       {/* Start Navigation */}
       <nav className="bg-white">
-        <Link href="products">Products</Link>
+        <Link href="/">Logo</Link>
       </nav>
       {/* End Navigation */}
     </>
