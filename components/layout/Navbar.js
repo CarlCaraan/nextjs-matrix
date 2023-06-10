@@ -1,11 +1,15 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 // Images
 import brand from "../../public/images/landing_page/brand.png";
 
 function Navbar() {
+  // const router = useRouter();
+  // const { pathname } = router;
+
   return (
     <>
       {/* Start Navigation */}
@@ -20,7 +24,7 @@ function Navbar() {
 
           {/* Nav Links */}
           <div className="flex h-16">
-            <Link className="navlinks" href="/">
+            <Link className="navlinks" href="/products">
               Products
             </Link>
             <Link className="navlinks" href="/">

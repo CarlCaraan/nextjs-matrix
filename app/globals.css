@@ -42,6 +42,9 @@
   .navlinks {
     @apply flex text-soft items-center justify-center w-28 hover:bg-panel hover:text-dark;
   }
+  .navlinks-active {
+    @apply flex text-soft items-center justify-center w-28 hover:bg-panel hover:text-dark border-b-2;
+  }
 }
 @layer utilities {
   .text-gradientPrimary {
