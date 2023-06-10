@@ -1,13 +1,12 @@
-import Link from "next/link";
+// Components
+import Navbar from "@/components/layout/Navbar";
 
 export default function Home() {
   return (
     <>
-      {/* Start Navigation */}
-      <nav>
-        <Link href="products">Products</Link>
-      </nav>
-      {/* End Navigation */}
+      <Navbar />
+
+      <main></main>
     </>
   );
 }

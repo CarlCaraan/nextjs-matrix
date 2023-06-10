@@ -2,26 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* ========= ALL FONTS ========= */
+/* SANS-SERIF */
+
+/* IBM Plex Sans */
+@font-face {
+  font-family: "IBM Plex Sans Regular";
+  src: url("../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Sans Light";
+  src: url("../fonts/IBM_Plex_Sans/IBMPlexSans-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Sans Medium";
+  src: url("../fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Sans Bold";
+  src: url("../fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf") format("truetype");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* SERIF */
+
+/* Cardo */
+@font-face {
+  font-family: "Cardo Regular";
+  src: url("../fonts/Cardo/Cardo-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cardo Bold";
+  src: url("../fonts/Cardo/Cardo-Bold.ttf") format("truetype");
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
 }

@@ -7,11 +7,27 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      // Colors
+      colors: {
+        dark: "#101010",
+        light: "#ffffff",
+        panel: "#E4E4E4",
+        primary: "#80FB8D",
+        fontSoft: "#323232",
+        card: "#F4F4F4",
       },
+    },
+    // All Fonts
+    fontFamily: {
+      // SANS
+      sans: ["IBM Plex Sans Regular", "sans-serif"],
+      sansLight: ["IBM Plex Sans Light", "sans-serif"],
+      sansMedium: ["IBM Plex Sans Medium", "sans-serif"],
+      sansBold: ["IBM Plex Sans Bold", "sans-serif"],
+
+      // SERIF
+      serif: ["Cardo Regular", "sans-serif"],
+      serifBold: ["Cardo Bold", "sans-serif"],
     },
   },
   plugins: [],
