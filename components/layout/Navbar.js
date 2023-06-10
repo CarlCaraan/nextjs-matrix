@@ -19,16 +19,28 @@ function Navbar() {
           </div>
 
           {/* Nav Links */}
-          <div className="flex space-x-12">
-            <Link href="/">Products</Link>
-            <Link href="/">Solutions</Link>
-            <Link href="/">Careers</Link>
-            <Link href="/">Support</Link>
-            <Link href="/">About Matrix</Link>
+          <div className="flex h-16">
+            <Link className="navlinks" href="/">
+              Products
+            </Link>
+            <Link className="navlinks" href="/">
+              Solutions
+            </Link>
+            <Link className="navlinks" href="/">
+              Careers
+            </Link>
+            <Link className="navlinks" href="/">
+              Support
+            </Link>
+            <Link className="navlinks" href="/">
+              About Matrix
+            </Link>
           </div>
 
           {/* Contact Us Button */}
-          <div>Contact Us</div>
+          <button className="gradientButton text-gradientPrimary">
+            Contact Us
+          </button>
         </div>
       </nav>
       {/* End Navigation */}

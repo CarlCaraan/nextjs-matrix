@@ -38,6 +38,17 @@
 @layer base {
 }
 @layer components {
+  /* NAVIGATION */
+  .navlinks {
+    @apply flex text-soft items-center justify-center w-28 hover:bg-panel hover:text-dark;
+  }
 }
 @layer utilities {
+  .text-gradientPrimary {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary;
+  }
+  .gradientButton {
+    @apply w-28 py-1 border-2;
+    border-image: linear-gradient(to right, #80fb8d, #56b4d3) 1;
+  }
 }
