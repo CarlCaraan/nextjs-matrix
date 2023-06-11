@@ -78,7 +78,7 @@ export default function Home() {
                 src={heroBG}
                 alt="hero-bg"
               />
-              <div className="gradient border-4 w-3/5 h-full right-0 -bottom-16 absolute -z-10"></div>
+              <div className="gradientBorder border-4 w-3/5 h-full right-0 -bottom-16 absolute -z-10"></div>
             </div>
             {/* End Right Part */}
           </div>
@@ -89,8 +89,16 @@ export default function Home() {
         <section className="section-container mt-24" id="sub-herosection">
           {/* Start Flex Container */}
           <div className="flex">
-            <div className="bg-slate-500 basis-1/2">a</div>
-            <div className="bg-blue-500 basis-1/2">b</div>
+            <div className="border basis-1/2">
+              <h6 className="uppercase font-soft">
+                Web agency based on laguna, Philippines
+              </h6>
+
+              <h4 className="text-gradientPrimary uppercase font-sansBold gradient text-2xl mt-4">
+                Creative business design ideas
+              </h4>
+            </div>
+            <div className="border basis-1/2">b</div>
           </div>
           {/* End Flex Container */}
         </section>
