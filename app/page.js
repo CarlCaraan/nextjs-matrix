@@ -17,9 +17,9 @@ export default function Home() {
       <main>
         {/* Start Herosection */}
         <section className="section-container" id="herosection">
-          <div className="grid grid-cols-12 gap-4 py-48">
+          <div className="grid grid-cols-12 gap-4 py-40">
             {/* Start Left Part */}
-            <div className="col-span-5 border">
+            <div className="col-span-5">
               <h1 className="text-[2.4vw]">
                 We design, develop and build software solution for you
               </h1>
@@ -38,6 +38,35 @@ export default function Home() {
                   alt="arrow-icon"
                 />
               </button>
+
+              <p className="text-soft mt-12">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit,
+                beatae magni! Odio est, quas aliquid deserunt vitae officiis
+                omnis sint pariatur atque accusantium?
+              </p>
+
+              {/* Start Flex Container */}
+              <div className="flex gap-[2px] mt-24">
+                <div className="bg-card px-6 pt-4 pb-14 w-1/3 hover:bg-panel duration-200">
+                  <div className="text-xs text-soft">Expert & Professional</div>
+                  <div className="text-sm text-dark font-sansMedium">
+                    Experienced Team
+                  </div>
+                </div>
+                <div className="bg-card px-6 pt-4 pb-14 w-1/3 hover:bg-panel duration-200">
+                  <div className="text-xs text-soft">Trusted Services</div>
+                  <div className="text-sm text-dark font-sansMedium">
+                    Quality and Efficiency
+                  </div>
+                </div>
+                <div className="bg-card px-6 pt-4 pb-14 w-1/3 hover:bg-panel duration-200">
+                  <div className="text-xs text-soft">Creative Minds</div>
+                  <div className="text-sm text-dark font-sansMedium">
+                    Elegant & User-Friendly
+                  </div>
+                </div>
+              </div>
+              {/* End Flex Container */}
             </div>
             {/* End Left Part */}
 
