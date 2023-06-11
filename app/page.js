@@ -90,7 +90,7 @@ export default function Home() {
           {/* Start Flex Container */}
           <div className="flex">
             <div className="border basis-1/2">
-              <h6 className="uppercase font-soft">
+              <h6 className="uppercase text-soft font-sansMedium">
                 Web agency based on laguna, Philippines
               </h6>
 
