@@ -48,19 +48,19 @@ export default function Home() {
 
               {/* Start Flex Container */}
               <div className="flex gap-[2px] mt-24">
-                <div className="bg-card px-6 pt-4 pb-14 w-1/3 hover:bg-panel duration-200">
+                <div className="bg-card px-6 pt-4 pb-14 basis-1/3 hover:bg-panel duration-200">
                   <div className="text-xs text-soft">Expert & Professional</div>
                   <div className="text-sm text-dark font-sansMedium">
                     Experienced Team
                   </div>
                 </div>
-                <div className="bg-card px-6 pt-4 pb-14 w-1/3 hover:bg-panel duration-200">
+                <div className="bg-card px-6 pt-4 pb-14 basis-1/3 hover:bg-panel duration-200">
                   <div className="text-xs text-soft">Trusted Services</div>
                   <div className="text-sm text-dark font-sansMedium">
                     Quality and Efficiency
                   </div>
                 </div>
-                <div className="bg-card px-6 pt-4 pb-14 w-1/3 hover:bg-panel duration-200">
+                <div className="bg-card px-6 pt-4 pb-14 basis-1/3 hover:bg-panel duration-200">
                   <div className="text-xs text-soft">Creative Minds</div>
                   <div className="text-sm text-dark font-sansMedium">
                     Elegant & User-Friendly
@@ -84,6 +84,17 @@ export default function Home() {
           </div>
         </section>
         {/* End Herosection */}
+
+        {/* Start SubHerosection */}
+        <section className="section-container mt-24" id="sub-herosection">
+          {/* Start Flex Container */}
+          <div className="flex">
+            <div className="bg-slate-500 basis-1/2">a</div>
+            <div className="bg-blue-500 basis-1/2">b</div>
+          </div>
+          {/* End Flex Container */}
+        </section>
+        {/* End SubHerosection */}
       </main>
       {/* End Main Content */}
     </>
