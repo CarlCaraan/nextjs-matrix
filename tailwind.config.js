@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // Colors
+      // COLORS
       colors: {
         dark: "#101010",
         light: "#ffffff",
@@ -18,15 +18,16 @@ module.exports = {
         card: "#F4F4F4",
       },
     },
-    // All Fonts
+
+    // ALL FONTS
     fontFamily: {
-      // SANS
+      // Sans
       sans: ["IBM Plex Sans Regular", "sans-serif"],
       sansLight: ["IBM Plex Sans Light", "sans-serif"],
       sansMedium: ["IBM Plex Sans Medium", "sans-serif"],
       sansBold: ["IBM Plex Sans Bold", "sans-serif"],
 
-      // SERIF
+      // Serif
       serif: ["Cardo Regular", "sans-serif"],
       serifBold: ["Cardo Bold", "sans-serif"],
     },

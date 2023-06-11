@@ -14,7 +14,7 @@ function Navbar() {
     <>
       {/* Start Navigation */}
       <nav className="bg-white border border-b-1">
-        <div className="flex justify-between container mx-auto items-center">
+        <div className="section-container flex justify-between items-center">
           {/* Logo */}
           <div>
             <Link href="/">
