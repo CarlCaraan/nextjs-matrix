@@ -5,6 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 
 // Images
 import arrowIcon from "../public/images/landing_page/arrow-icon-gradient.png";
+import heroBG from "../public/images/landing_page/herosection-bg.png";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       <main>
         {/* Start Herosection */}
         <section className="section-container" id="herosection">
-          <div className="grid grid-cols-12 gap-4 py-40">
+          <div className="grid grid-cols-12 gap-4 py-36">
             {/* Start Left Part */}
             <div className="col-span-5">
               <h1 className="text-[2.4vw]">
@@ -71,7 +72,14 @@ export default function Home() {
             {/* End Left Part */}
 
             {/* Start Right Part */}
-            <div className="col-span-7 border"></div>
+            <div className="col-span-7 relative">
+              <Image
+                className="w-5/6 absolute bottom-0"
+                src={heroBG}
+                alt="hero-bg"
+              />
+              <div className="gradient border-4 w-3/5 h-full right-0 -bottom-16 absolute -z-10"></div>
+            </div>
             {/* End Right Part */}
           </div>
         </section>

@@ -57,4 +57,7 @@
     @apply w-28 py-1 border-2;
     border-image: linear-gradient(to right, #80fb8d, #56b4d3) 1;
   }
+  .gradient {
+    border-image: linear-gradient(to right, #80fb8d, #56b4d3) 1;
+  }
 }
