@@ -129,8 +129,8 @@ export default function Home() {
               </p>
 
               {/* Button */}
-              <button className="gradientButton text-gradientPrimary mt-24">
-                About Us
+              <button className="gradientButton text-gradientPrimary mt-8">
+                Read more
               </button>
             </div>
             {/* End Left Part */}
