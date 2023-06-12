@@ -10,10 +10,17 @@ import subheroBG1 from "../public/images/products/project13.png";
 import subheroBG2 from "../public/images/products/project11.png";
 import subheroBG3 from "../public/images/products/project7.png";
 import subheroBG4 from "../public/images/products/project4.png";
+import contactBG from "../public/images/landing_page/contact-bg.jpg";
+
 // SVG
 import webDesignSVG from "../public/images/landing_page/webdesign-svg-icon.svg";
 import websiteSVG from "../public/images/landing_page/website-svg-icon.svg";
 import logoDesignSVG from "../public/images/landing_page/logodesign-svg-icon.svg";
+
+import locationSVG from "../public/images/landing_page/contact-section/location-svg-icon.svg";
+import telephoneSVG from "../public/images/landing_page/contact-section/telephone-svg-icon.svg";
+import envelopeSVG from "../public/images/landing_page/contact-section/envelope-svg-icon.svg";
+import clockSVG from "../public/images/landing_page/contact-section/clock-svg-icon.svg";
 
 export default function Home() {
   return (
@@ -109,7 +116,7 @@ export default function Home() {
                 Creative business design ideas
               </h4>
 
-              <p className="text-soft mt-4">
+              <p className="text-soft mt-4 indent-8">
                 At our web development business, we specialize in crafting
                 captivating and visually stunning online experiences that
                 revolve around creative business design ideas. We understand
@@ -179,7 +186,7 @@ export default function Home() {
         {/* ========= End SubHerosection ========= */}
 
         {/* ========= Start Carousel Section ========= */}
-        <div className="bg-card">
+        <div className="bg-card rounded-b-[25%] shadow-sm">
           <section className="section-container py-24" id="carousel-section">
             <p className="text-[18px] text-soft uppercase font-sansMedium text-center">
               Custom Web Development Services Tailored to Your Business Needs
@@ -243,11 +250,137 @@ export default function Home() {
 
         {/* ========= Start Contact Section ========= */}
         <section className="section-container py-24" id="contact-section">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
-          tempore ducimus non repudiandae aperiam aut suscipit optio repellendus
-          voluptates doloribus ut accusamus accusantium minima, inventore nemo
-          at veniam necessitatibus quaerat rerum maiores. Impedit repellat
-          cumque illo aliquam hic corrupti. Saepe!
+          {/* Start Flex Container */}
+          <div className="flex gap-4">
+            {/* Start Left Part */}
+            <div className="border basis-1/2 relative">
+              <Image className="w-full" src={contactBG} alt="contact-bg" />
+              <div className="absolute top-10 left-0 w-5/6 h-5/6 bg-white">
+                <form>
+                  <label className="flex flex-col">
+                    <span>Email</span>
+                    <input className="border" type="text" />
+                  </label>
+                </form>
+              </div>
+            </div>
+            {/* End Left Part */}
+
+            {/* Start Right Part */}
+            <div className="basis-1/2">
+              <h1 className="text-5xl mt-12">
+                Talk to <span className="gradientText">our expert</span> in
+                product analytics
+              </h1>
+
+              <p className="mt-4 text-soft">
+                Have a question about pricing, plans or Growthly? Fill out the
+                form and our product analytics expert will be in touch directly.
+              </p>
+
+              <p className="mt-4 font-sansBold">Laguna, Philippines</p>
+
+              {/* Start Grid Container */}
+              <div className="mt-4 grid grid-cols-2 gap-[2px]">
+                {/* Card 1 */}
+                <div className="flex flex-col space-y-2 bg-card p-4">
+                  <div className="flex gap-4">
+                    <div className="basis-1/8">
+                      <Image
+                        className="w-6 mt-1"
+                        src={locationSVG}
+                        alt="location-svg"
+                      />
+                    </div>
+                    <div className="basis-7/8 text-soft">
+                      National Highway, Sitio Ilaya, Brgy. Sto Domingo, Bay
+                      Laguna
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="basis-1/8">
+                      <Image
+                        className="w-4 mt-1"
+                        src={telephoneSVG}
+                        alt="telephone-svg"
+                      />
+                    </div>
+                    <div className="basis-7/8 text-soft underline">
+                      +639123456789
+                    </div>
+                  </div>
+                </div>
+
+                {/* Card 2 */}
+                <div className="flex flex-col space-y-2 bg-card p-4">
+                  <div className="flex gap-4">
+                    <div className="basis-1/8">
+                      <Image
+                        className="w-5 mt-1"
+                        src={locationSVG}
+                        alt="location-svg"
+                      />
+                    </div>
+                    <div className="basis-7/8 text-soft">
+                      Brgy. Bubukal, Sitio Sampaguita, Sta. Cruz Laguna
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="basis-1/8">
+                      <Image
+                        className="w-4 mt-1"
+                        src={telephoneSVG}
+                        alt="telephone-svg"
+                      />
+                    </div>
+                    <div className="basis-7/8 text-soft underline">
+                      +639559168806
+                    </div>
+                  </div>
+                </div>
+
+                {/* Card 3 */}
+                <div className="bg-card p-4">
+                  <div className="flex gap-4">
+                    <div className="basis-1/8">
+                      <Image
+                        className="w-4 mt-1"
+                        src={envelopeSVG}
+                        alt="envelope-svg"
+                      />
+                    </div>
+                    <div className="basis-7/8 text-soft">
+                      Email <br /> matrixsoftwaresolution@gmail.com
+                    </div>
+                  </div>
+                </div>
+
+                {/* Card 4 */}
+                <div className="bg-card p-4">
+                  <div className="flex gap-4">
+                    <div className="basis-1/8">
+                      <Image
+                        className="w-4 mt-1"
+                        src={clockSVG}
+                        alt="clock-svg"
+                      />
+                    </div>
+                    <div className="basis-7/8 text-soft">
+                      Schedule <br /> 24 Hours / 7 Days Open
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* End Grid Container */}
+
+              <p className="text-sm mt-4 text-soft">
+                Don&#39;t worry! We could arrange a costless meeting to discuss
+                how we could collaborate to offer you a solution.
+              </p>
+            </div>
+            {/* End Right Part */}
+          </div>
+          {/* End Flex Container */}
         </section>
         {/* ========= End Contact Section ========= */}
       </main>

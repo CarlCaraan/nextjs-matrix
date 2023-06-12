@@ -55,9 +55,7 @@ function Navbar() {
           </div>
 
           {/* Contact Us Button */}
-          <button className="gradientButton text-gradientPrimary">
-            Contact Us
-          </button>
+          <button className="gradientButton gradientText">Contact Us</button>
         </div>
       </nav>
       {/* End Navigation */}
