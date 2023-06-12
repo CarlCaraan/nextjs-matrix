@@ -106,13 +106,26 @@ export default function Home() {
               </h4>
 
               <p className="text-soft mt-4">
-                Amet minim mollit non <strong>deserunt ullamco</strong> est sit
-                aliqua dolor do amet sint. Velit officia consequat duis enim
-                velit mollit. Exercitation veniam consequat.
+                At our web development business, we specialize in crafting
+                captivating and visually stunning online experiences that
+                revolve around creative business design ideas. We understand
+                that a well-designed website goes beyond just aesthetics; it is
+                a powerful tool to communicate your{" "}
+                <span className="font-sansMedium">
+                  brand&#39;s unique identity{" "}
+                </span>
+                and engage your target audience.
                 <br /> <br />
-                Sunt nostrud amet. minim mollit non deserunt ullamco est sit
-                aliqua dolor do amet sint. Velit officia consequat duis enim
-                velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                From sleek and minimalist designs to bold and vibrant layouts,
+                we believe in the power of creativity to make a lasting
+                impression. Our team leverages the latest design trends,
+                technologies, and{" "}
+                <span className="font-sansMedium">
+                  user experience principles
+                </span>{" "}
+                to ensure that every website we create not only looks visually
+                appealing but also provides a seamless and intuitive browsing
+                experience.
               </p>
 
               {/* Button */}
@@ -128,25 +141,25 @@ export default function Home() {
                 {/* Start Image Wrapper */}
                 <div className="relative h-full">
                   <Image
-                    className="absolute top-1 left-0 w-1/2 z-30 border-2
+                    className="absolute top-12 left-0 w-1/2 z-30 border-2
                     hover:scale-105 hover:z-50 transition ease-out duration-300 hover:shadow-lg"
                     src={subheroBG1}
                     alt="subhero-image1"
                   />
                   <Image
-                    className="absolute top-5 right-4 w-1/2 z-40 border-2
+                    className="absolute top-16 right-4 w-1/2 z-40 border-2
                     hover:scale-105 hover:z-50 transition ease-out duration-300 hover:shadow-lg"
                     src={subheroBG2}
                     alt="subhero-image2"
                   />
                   <Image
-                    className="absolute bottom-20 left-4 w-1/2 z-10 border-2
+                    className="absolute top-44 left-4 w-1/2 z-10 border-2
                     hover:scale-105 hover:z-50 transition ease-out duration-300 hover:shadow-lg"
                     src={subheroBG3}
                     alt="subhero-image3"
                   />
                   <Image
-                    className="absolute bottom-16 right-0 w-1/2 z-20 border-2
+                    className="absolute top-48 right-0 w-1/2 z-20 border-2
                     hover:scale-105 hover:z-50 transition ease-out duration-300 hover:shadow-lg"
                     src={subheroBG4}
                     alt="subhero-image4"
