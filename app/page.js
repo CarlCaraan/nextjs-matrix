@@ -95,6 +95,7 @@ export default function Home() {
         <section className="section-container my-28" id="sub-herosection">
           {/* Start Flex Container */}
           <div className="flex">
+            {/* Start Left Part */}
             <div className="basis-1/2">
               <h6 className="uppercase text-soft font-sansMedium">
                 Web agency based on laguna, Philippines
@@ -119,12 +120,15 @@ export default function Home() {
                 About Us
               </button>
             </div>
-            <div className="border border-white basis-1/2 ">
+            {/* End Left Part */}
+
+            {/* Start Right Part */}
+            <div className="basis-1/2 ">
               <div className="ml-auto w-4/6 h-full">
                 {/* Start Image Wrapper */}
                 <div className="relative h-full">
                   <Image
-                    className="absolute top-0 left-0 w-1/2 z-30 border-2
+                    className="absolute top-1 left-0 w-1/2 z-30 border-2
                     hover:scale-105 hover:z-50 transition ease-out duration-300 hover:shadow-lg"
                     src={subheroBG1}
                     alt="subhero-image1"
@@ -151,6 +155,7 @@ export default function Home() {
                 {/* End Image Wrapper */}
               </div>
             </div>
+            {/* End Right Part */}
           </div>
           {/* End Flex Container */}
         </section>
