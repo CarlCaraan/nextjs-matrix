@@ -6,6 +6,10 @@ import Navbar from "@/components/layout/Navbar";
 // Images
 import arrowIcon from "../public/images/landing_page/arrow-icon-gradient.png";
 import heroBG from "../public/images/landing_page/herosection-bg.png";
+import subheroBG1 from "../public/images/products/project13.png";
+import subheroBG2 from "../public/images/products/project11.png";
+import subheroBG3 from "../public/images/products/project7.png";
+import subheroBG4 from "../public/images/products/project4.png";
 
 export default function Home() {
   return (
@@ -18,7 +22,7 @@ export default function Home() {
       <main>
         {/* Start Herosection */}
         <section className="section-container" id="herosection">
-          <div className="grid grid-cols-12 gap-4 py-36">
+          <div className="grid grid-cols-12 gap-4 py-28">
             {/* Start Left Part */}
             <div className="col-span-5">
               <h1 className="text-[2.4vw]">
@@ -41,9 +45,11 @@ export default function Home() {
               </button>
 
               <p className="text-soft mt-12">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit,
-                beatae magni! Odio est, quas aliquid deserunt vitae officiis
-                omnis sint pariatur atque accusantium?
+                Matrix is a dynamic, innovative, and forward-thinking start-up
+                company based in <span className="font-sansMedium">Laguna</span>{" "}
+                that takes great pride in providing top-notch, cutting-edge, and
+                highly cost-effective web design services to cater to all your
+                online needs.
               </p>
 
               {/* Start Flex Container */}
@@ -86,10 +92,10 @@ export default function Home() {
         {/* End Herosection */}
 
         {/* Start SubHerosection */}
-        <section className="section-container mt-24" id="sub-herosection">
+        <section className="section-container my-28" id="sub-herosection">
           {/* Start Flex Container */}
           <div className="flex">
-            <div className="border basis-1/2">
+            <div className="basis-1/2">
               <h6 className="uppercase text-soft font-sansMedium">
                 Web agency based on laguna, Philippines
               </h6>
@@ -97,8 +103,54 @@ export default function Home() {
               <h4 className="text-gradientPrimary uppercase font-sansBold gradient text-2xl mt-4">
                 Creative business design ideas
               </h4>
+
+              <p className="text-soft mt-4">
+                Amet minim mollit non <strong>deserunt ullamco</strong> est sit
+                aliqua dolor do amet sint. Velit officia consequat duis enim
+                velit mollit. Exercitation veniam consequat.
+                <br /> <br />
+                Sunt nostrud amet. minim mollit non deserunt ullamco est sit
+                aliqua dolor do amet sint. Velit officia consequat duis enim
+                velit mollit. Exercitation veniam consequat sunt nostrud amet.
+              </p>
+
+              {/* Button */}
+              <button className="gradientButton text-gradientPrimary mt-24">
+                About Us
+              </button>
             </div>
-            <div className="border basis-1/2">b</div>
+            <div className="border border-white basis-1/2 ">
+              <div className="ml-auto w-4/6 h-full">
+                {/* Start Image Wrapper */}
+                <div className="relative h-full">
+                  <Image
+                    className="absolute top-0 left-0 w-1/2 z-30 border-2
+                    hover:scale-105 hover:z-50 transition ease-out duration-300 hover:shadow-lg"
+                    src={subheroBG1}
+                    alt="subhero-image1"
+                  />
+                  <Image
+                    className="absolute top-5 right-4 w-1/2 z-40 border-2
+                    hover:scale-105 hover:z-50 transition ease-out duration-300 hover:shadow-lg"
+                    src={subheroBG2}
+                    alt="subhero-image2"
+                  />
+                  <Image
+                    className="absolute bottom-20 left-4 w-1/2 z-10 border-2
+                    hover:scale-105 hover:z-50 transition ease-out duration-300 hover:shadow-lg"
+                    src={subheroBG3}
+                    alt="subhero-image3"
+                  />
+                  <Image
+                    className="absolute bottom-16 right-0 w-1/2 z-20 border-2
+                    hover:scale-105 hover:z-50 transition ease-out duration-300 hover:shadow-lg"
+                    src={subheroBG4}
+                    alt="subhero-image4"
+                  />
+                </div>
+                {/* End Image Wrapper */}
+              </div>
+            </div>
           </div>
           {/* End Flex Container */}
         </section>
