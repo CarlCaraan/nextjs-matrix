@@ -10,17 +10,21 @@ import subheroBG1 from "../public/images/products/project13.png";
 import subheroBG2 from "../public/images/products/project11.png";
 import subheroBG3 from "../public/images/products/project7.png";
 import subheroBG4 from "../public/images/products/project4.png";
+// SVG
+import webDesignSVG from "../public/images/landing_page/webdesign-svg-icon.svg";
+import websiteSVG from "../public/images/landing_page/website-svg-icon.svg";
+import logoDesignSVG from "../public/images/landing_page/logodesign-svg-icon.svg";
 
 export default function Home() {
   return (
     <>
-      {/* Start Navigation */}
+      {/* ========= Start Navigation ========= */}
       <Navbar />
-      {/* End Navigation */}
+      {/* ========= End Navigation ========= */}
 
-      {/* Start Main Content */}
+      {/* ========= Start Main Content ========= */}
       <main>
-        {/* Start Herosection */}
+        {/* ========= Start Herosection ========= */}
         <section className="section-container" id="herosection">
           <div className="grid grid-cols-12 gap-4 py-28">
             {/* Start Left Part */}
@@ -89,9 +93,9 @@ export default function Home() {
             {/* End Right Part */}
           </div>
         </section>
-        {/* End Herosection */}
+        {/* ========= End Herosection ========= */}
 
-        {/* Start SubHerosection */}
+        {/* ========= Start SubHerosection ========= */}
         <section className="section-container my-28" id="sub-herosection">
           {/* Start Flex Container */}
           <div className="flex">
@@ -101,7 +105,7 @@ export default function Home() {
                 Web agency based on laguna, Philippines
               </h6>
 
-              <h4 className="text-gradientPrimary uppercase font-sansBold gradient text-2xl mt-4">
+              <h4 className="gradientText uppercase font-sansBold gradient text-2xl mt-4">
                 Creative business design ideas
               </h4>
 
@@ -129,7 +133,7 @@ export default function Home() {
               </p>
 
               {/* Button */}
-              <button className="gradientButton text-gradientPrimary mt-8">
+              <button className="gradientButton gradientText mt-8">
                 Read more
               </button>
             </div>
@@ -172,7 +176,80 @@ export default function Home() {
           </div>
           {/* End Flex Container */}
         </section>
-        {/* End SubHerosection */}
+        {/* ========= End SubHerosection ========= */}
+
+        {/* ========= Start Carousel Section ========= */}
+        <div className="bg-card">
+          <section className="section-container py-24" id="carousel-section">
+            <p className="text-[18px] text-soft uppercase font-sansMedium text-center">
+              Custom Web Development Services Tailored to Your Business Needs
+            </p>
+
+            <h3 className="text-3xl gradientText uppercase text-center mt-2 font-sansMedium">
+              Transforming Ideas into Stunning Web Solutions
+            </h3>
+
+            {/* Start Flex Container */}
+            <div className="flex gap-4 mt-16">
+              <div className="basis-1/3">
+                <Image
+                  className="mx-auto"
+                  src={webDesignSVG}
+                  alt="webdesign-svg"
+                />
+                <h4 className="mt-12 text-dark text-2xl font-sansBold text-center">
+                  Web Design
+                </h4>
+                <p className="text-soft font-sansLight text-center mt-4">
+                  We specialize in designing sleek and modern websites that
+                  capture attention and deliver seamless user experiences. Our
+                  expert team combines creativity and technical expertise to
+                  craft visually stunning and functional web solutions tailored
+                  to your business needs.
+                </p>
+              </div>
+              <div className="basis-1/3">
+                <Image className="mx-auto" src={websiteSVG} alt="website-svg" />
+                <h4 className="mt-12 text-dark text-2xl font-sansBold text-center">
+                  Website
+                </h4>
+                <p className="text-soft font-sansLight text-center mt-4">
+                  Our team builds responsive and dynamic websites that captivate
+                  users, drive engagement, and empower your online brand.
+                </p>
+              </div>
+              <div className="basis-1/3">
+                <Image
+                  className="mx-auto"
+                  src={logoDesignSVG}
+                  alt="logodesign-svg"
+                />
+                <h4 className="mt-12 text-dark text-2xl font-sansBold text-center">
+                  Logo Design
+                </h4>
+                <p className="text-soft font-sansLight text-center mt-4">
+                  Make a lasting impression with a captivating and distinctive
+                  logo that represents your brand&#39;s identity. Our skilled
+                  designers craft unique and memorable logos that leave a
+                  lasting impact and help your business stand out in the digital
+                  landscape.
+                </p>
+              </div>
+            </div>
+            {/* End Flex Container */}
+          </section>
+        </div>
+        {/* ========= End Carousel Section ========= */}
+
+        {/* ========= Start Contact Section ========= */}
+        <section className="section-container py-24" id="contact-section">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
+          tempore ducimus non repudiandae aperiam aut suscipit optio repellendus
+          voluptates doloribus ut accusamus accusantium minima, inventore nemo
+          at veniam necessitatibus quaerat rerum maiores. Impedit repellat
+          cumque illo aliquam hic corrupti. Saepe!
+        </section>
+        {/* ========= End Contact Section ========= */}
       </main>
       {/* End Main Content */}
     </>
