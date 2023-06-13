@@ -268,7 +268,7 @@ export default function Home() {
                     <span className="font-sansMedium text-soft">Email</span>
                     <input
                       className="border py-1 px-2"
-                      type="text"
+                      type="email"
                       placeholder="Email Address"
                     />
                   </label>
@@ -284,7 +284,6 @@ export default function Home() {
                     <span className="font-sansMedium text-soft">Message</span>
                     <textarea
                       className="border py-1 px-2"
-                      type="text"
                       placeholder="Your inquiries here"
                       rows="3"
                     />
