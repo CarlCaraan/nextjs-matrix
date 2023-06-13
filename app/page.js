@@ -59,7 +59,7 @@ export default function Home() {
                 Matrix is a dynamic, innovative, and forward-thinking start-up
                 company based in <span className="font-sansMedium">Laguna</span>{" "}
                 that takes great pride in providing top-notch, cutting-edge, and
-                highly cost-effective web design services to cater to all your
+                low cost-effective web design services to cater to all your
                 online needs.
               </p>
 
@@ -255,12 +255,43 @@ export default function Home() {
             {/* Start Left Part */}
             <div className="border basis-1/2 relative">
               <Image className="w-full" src={contactBG} alt="contact-bg" />
-              <div className="absolute top-10 left-0 w-5/6 h-5/6 bg-white">
+              <div className="absolute top-10 left-0 w-5/6 h-5/6 bg-white px-12">
+                <h3 className="text-3xl text-panel font-sansBold mt-4 text-center">
+                  Get in touch
+                </h3>
+                <div className="text-panel text-center leading-none">
+                  Drop us a message
+                </div>
+
                 <form>
-                  <label className="flex flex-col">
-                    <span>Email</span>
-                    <input className="border" type="text" />
+                  <label className="flex flex-col mt-4">
+                    <span className="font-sansMedium text-soft">Email</span>
+                    <input
+                      className="border py-1 px-2"
+                      type="text"
+                      placeholder="Email Address"
+                    />
                   </label>
+                  <label className="flex flex-col mt-4">
+                    <span className="font-sansMedium text-soft">Name</span>
+                    <input
+                      className="border py-1 px-2"
+                      type="text"
+                      placeholder="First name, MI. Last name"
+                    />
+                  </label>
+                  <label className="flex flex-col mt-4">
+                    <span className="font-sansMedium text-soft">Message</span>
+                    <textarea
+                      className="border py-1 px-2"
+                      type="text"
+                      placeholder="Your inquiries here"
+                      rows="3"
+                    />
+                  </label>
+                  <button className="border mt-2 px-3 py-1 shadow-sm float-right">
+                    Submit
+                  </button>
                 </form>
               </div>
             </div>
