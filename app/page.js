@@ -2,7 +2,6 @@ import Image from "next/image";
 
 // Components
 import Navbar from "@/components/layout/Navbar";
-import ContactForm from "@/components/ContactForm";
 
 // Images
 import arrowIcon from "../public/images/landing_page/arrow-icon-gradient.png";
@@ -22,6 +21,7 @@ import locationSVG from "../public/images/landing_page/contact-section/location-
 import telephoneSVG from "../public/images/landing_page/contact-section/telephone-svg-icon.svg";
 import envelopeSVG from "../public/images/landing_page/contact-section/envelope-svg-icon.svg";
 import clockSVG from "../public/images/landing_page/contact-section/clock-svg-icon.svg";
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   return (
