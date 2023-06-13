@@ -23,6 +23,8 @@ export default async function handler(req, res) {
         to: "bannedefused3@gmail.com", // Replace with the recipient's email address
         subject: "New contact form submission - MATRIX SOFTWARE SOLUTION",
         text: `
+          You have a new client inquiry! 
+
           Client Details:
           Name: ${name}
           Email: ${email}
@@ -40,7 +42,11 @@ export default async function handler(req, res) {
 
           Your Message: ${message}
 
+
+
           NOTE: Kindly note that the process may take approximately 1-3 business days. We kindly request you to prepare for a scheduled meeting, which can be conducted online or in person, as per your convenience.
+
+          Thank you for reaching out to us!
         `,
       };
 
