@@ -34,7 +34,7 @@ export default async function handler(req, res) {
       const mailOptionsToSender = {
         from: "matrixsoftwaresolutionph@gmail.com",
         to: email, // Replace with the recipient's email address
-        subject: "Email Sent AT - MATRIX SOFTWARE SOLUTION",
+        subject: "(Support) Email Sent At - MATRIX SOFTWARE SOLUTION",
         text: `
           We are delighted to receive your inquiry! Our web development business is ready to assist you in bringing your digital ideas to life. 
           Get ready to embark on an exciting journey of creating a stunning and functional website tailored to your unique needs.
