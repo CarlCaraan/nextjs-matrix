@@ -10,6 +10,7 @@ function ContactForm() {
   const [error, setError] = useState("");
   const [isPending, setIsPending] = useState(false);
 
+  // Realtime Validation
   useEffect(() => {
     if (email !== "") {
       setError("");
@@ -25,6 +26,7 @@ function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // Submit Validation
     if (email === "") {
       setError("Email field is required");
       return;
