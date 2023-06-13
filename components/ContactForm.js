@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 
 function ContactForm() {
   const [name, setName] = useState("");
@@ -9,6 +9,18 @@ function ContactForm() {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
   const [isPending, setIsPending] = useState(false);
+
+  useEffect(() => {
+    if (email !== "") {
+      setError("");
+    }
+    if (name !== "") {
+      setError("");
+    }
+    if (message !== "") {
+      setError("");
+    }
+  }, [name, email, message]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -110,8 +122,8 @@ function ContactForm() {
             rows="3"
             onChange={(e) => setMessage(e.target.value)}
             id="message"
-            maxlength="200"
-            minlength="4"
+            maxLength="200"
+            minLength="4"
           />
         </label>
 
