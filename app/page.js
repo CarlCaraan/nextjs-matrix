@@ -22,6 +22,7 @@ import telephoneSVG from "../public/images/landing_page/contact-section/telephon
 import envelopeSVG from "../public/images/landing_page/contact-section/envelope-svg-icon.svg";
 import clockSVG from "../public/images/landing_page/contact-section/clock-svg-icon.svg";
 import ContactForm from "@/components/ContactForm";
+import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
@@ -388,6 +389,10 @@ export default function Home() {
           {/* End Flex Container */}
         </section>
         {/* ========= End Contact Section ========= */}
+
+        {/* ========= Start Footer ========= */}
+        <Footer />
+        {/* ========= End Footer ========= */}
       </main>
       {/* End Main Content */}
     </>

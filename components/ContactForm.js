@@ -110,6 +110,8 @@ function ContactForm() {
             rows="3"
             onChange={(e) => setMessage(e.target.value)}
             id="message"
+            maxlength="200"
+            minlength="4"
           />
         </label>
 
