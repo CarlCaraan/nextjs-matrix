@@ -312,7 +312,7 @@ export default function Home() {
                       />
                     </div>
                     <div className="basis-7/8 text-soft underline">
-                      +639305475411
+                      +63930-547-5411
                     </div>
                   </div>
                 </div>
@@ -340,7 +340,7 @@ export default function Home() {
                       />
                     </div>
                     <div className="basis-7/8 text-soft underline">
-                      +639559168806
+                      +63955-916-8806
                     </div>
                   </div>
                 </div>
