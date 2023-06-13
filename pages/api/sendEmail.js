@@ -21,16 +21,32 @@ export default async function handler(req, res) {
       const mailOptions = {
         from: email,
         to: "bannedefused3@gmail.com", // Replace with the recipient's email address
-        subject: "New contact form submission",
+        subject: "New contact form submission - MATRIX SOFTWARE SOLUTION",
         text: `
+          Client Details:
           Name: ${name}
           Email: ${email}
           Message: ${message}
         `,
       };
+      const mailOptionsToSender = {
+        from: "bannedefused3@gmail.com",
+        to: email, // Replace with the recipient's email address
+        subject: "Email Sent AT - MATRIX SOFTWARE SOLUTION",
+        text: `
+          We are delighted to receive your inquiry! Our web development business is ready to assist you in bringing your digital ideas to life. 
+          Get ready to embark on an exciting journey of creating a stunning and functional website tailored to your unique needs.
+
+
+          Your Message: ${message}
+
+          NOTE: Kindly note that the process may take approximately 1-3 business days. We kindly request you to prepare for a scheduled meeting, which can be conducted online or in person, as per your convenience.
+        `,
+      };
 
       // Send the email
       await transporter.sendMail(mailOptions);
+      await transporter.sendMail(mailOptionsToSender);
 
       res.status(200).json({ message: "Email sent successfully!" });
     } catch (error) {
