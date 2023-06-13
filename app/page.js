@@ -312,7 +312,7 @@ export default function Home() {
                       />
                     </div>
                     <div className="basis-7/8 text-soft underline">
-                      +639123456789
+                      +639305475411
                     </div>
                   </div>
                 </div>
@@ -356,7 +356,7 @@ export default function Home() {
                       />
                     </div>
                     <div className="basis-7/8 text-soft">
-                      Email <br /> matrixsoftwaresolution@gmail.com
+                      Email <br /> matrixsoftwaresolutionph@gmail.com
                     </div>
                   </div>
                 </div>

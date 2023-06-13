@@ -12,15 +12,15 @@ export default async function handler(req, res) {
         port: 465, // Replace with the port number of your SMTP server
         secure: true, // Set to true if your SMTP server requires a secure connection
         auth: {
-          user: "bannedefused3@gmail.com", // Replace with your email address
-          pass: "ttcslbcqckqvduvj", // Replace with your email password
+          user: "matrixsoftwaresolutionph@gmail.com", // Replace with your email address
+          pass: "kpwnvrvyxypmqrtw", // Replace with your email password
         },
       });
 
       // Prepare the email message
       const mailOptions = {
         from: email,
-        to: "bannedefused3@gmail.com", // Replace with the recipient's email address
+        to: "matrixsoftwaresolutionph@gmail.com", // Replace with the recipient's email address
         subject: "New contact form submission - MATRIX SOFTWARE SOLUTION",
         text: `
           You have a new client inquiry! 
@@ -32,7 +32,7 @@ export default async function handler(req, res) {
         `,
       };
       const mailOptionsToSender = {
-        from: "bannedefused3@gmail.com",
+        from: "matrixsoftwaresolutionph@gmail.com",
         to: email, // Replace with the recipient's email address
         subject: "Email Sent AT - MATRIX SOFTWARE SOLUTION",
         text: `
