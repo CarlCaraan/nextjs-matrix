@@ -2,6 +2,7 @@ import Image from "next/image";
 
 // Components
 import Navbar from "@/components/layout/Navbar";
+import ContactForm from "@/components/ContactForm";
 
 // Images
 import arrowIcon from "../public/images/landing_page/arrow-icon-gradient.png";
@@ -263,35 +264,9 @@ export default function Home() {
                   Drop us a message
                 </div>
 
-                <form>
-                  <label className="flex flex-col mt-4">
-                    <span className="font-sansMedium text-soft">Email</span>
-                    <input
-                      className="border py-1 px-2"
-                      type="email"
-                      placeholder="Email Address"
-                    />
-                  </label>
-                  <label className="flex flex-col mt-4">
-                    <span className="font-sansMedium text-soft">Name</span>
-                    <input
-                      className="border py-1 px-2"
-                      type="text"
-                      placeholder="First name, MI. Last name"
-                    />
-                  </label>
-                  <label className="flex flex-col mt-4">
-                    <span className="font-sansMedium text-soft">Message</span>
-                    <textarea
-                      className="border py-1 px-2"
-                      placeholder="Your inquiries here"
-                      rows="3"
-                    />
-                  </label>
-                  <button className="border mt-2 px-3 py-1 shadow-sm float-right">
-                    Submit
-                  </button>
-                </form>
+                {/* Start Contact Form Component */}
+                <ContactForm />
+                {/* End Contact Form Component */}
               </div>
             </div>
             {/* End Left Part */}
