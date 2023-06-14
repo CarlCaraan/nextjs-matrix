@@ -95,8 +95,8 @@ function ContactForm() {
             } border py-1 px-2`}
             type="email"
             placeholder="Email Address"
-            value={email}
             onChange={(e) => setEmail(e.target.value)}
+            value={email}
             id="email"
           />
         </label>
@@ -109,6 +109,7 @@ function ContactForm() {
             type="text"
             placeholder="First name, MI. Last name"
             onChange={(e) => setName(e.target.value)}
+            value={name}
             id="name"
           />
         </label>
@@ -123,6 +124,7 @@ function ContactForm() {
             placeholder="Your inquiries here"
             rows="3"
             onChange={(e) => setMessage(e.target.value)}
+            value={message}
             id="message"
             maxLength="200"
             minLength="4"
