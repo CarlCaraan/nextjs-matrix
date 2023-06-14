@@ -251,7 +251,7 @@ export default function Home() {
         {/* ========= End Carousel Section ========= */}
 
         {/* ========= Start Contact Section ========= */}
-        <section className="section-container py-24" id="contact-section">
+        <section className="section-container py-32" id="contact-section">
           {/* Start Flex Container */}
           <div className="flex gap-4">
             {/* Start Left Part */}

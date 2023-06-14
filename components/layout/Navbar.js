@@ -5,7 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 // Images
-import brand from "../../public/images/landing_page/brand.png";
+import brand from "../../public/images/navigation/brand.png";
 
 function Navbar() {
   const pathname = usePathname();
