@@ -20,22 +20,18 @@ function Footer() {
           </div>
           <div>
             <div className="uppercase font-sansLight">Follow us:</div>
-            <div>
-              <Link href="/">
-                <div className="group">
-                  <Image
-                    className="float-right mt-4 block group-hover:hidden"
-                    src={facebookSVG}
-                    alt="facebook-icon"
-                  />
-                  <Image
-                    className="float-right mt-4 hidden group-hover:block"
-                    src={facebookGradientSVG}
-                    alt="facebook-icon-gradient"
-                  />
-                </div>
-              </Link>
-            </div>
+            <Link className="group" href="/">
+              <Image
+                className="float-right mt-4 block group-hover:hidden"
+                src={facebookSVG}
+                alt="facebook-icon"
+              />
+              <Image
+                className="float-right mt-4 hidden group-hover:block"
+                src={facebookGradientSVG}
+                alt="facebook-icon-gradient"
+              />
+            </Link>
           </div>
         </div>
         {/* End Flex Container */}
