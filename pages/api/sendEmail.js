@@ -13,7 +13,7 @@ export default async function handler(req, res) {
         secure: true, // Set to true if your SMTP server requires a secure connection
         auth: {
           user: "matrixsoftwaresolutionph@gmail.com", // Replace with your email address
-          pass: "kpwnvrvyxypmqrtw", // Replace with your email password
+          pass: "apbrpxyfpuucxdqc", // Replace with your email password
         },
       });
 
