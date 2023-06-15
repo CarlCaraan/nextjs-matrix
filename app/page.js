@@ -154,25 +154,25 @@ export default function Home() {
                 {/* Start Image Wrapper */}
                 <div className="relative h-full">
                   <Image
-                    className="absolute top-12 left-0 w-1/2 z-30 border-2
+                    className="absolute top-12 left-0 w-1/2 z-20 border-2
                     hover:scale-105 hover:z-50 transition ease-out duration-300 hover:shadow-lg"
                     src={subheroBG1}
                     alt="subhero-image1"
                   />
                   <Image
-                    className="absolute top-16 right-4 w-1/2 z-40 border-2
+                    className="absolute top-16 right-4 w-1/2 z-30 border-2
                     hover:scale-105 hover:z-50 transition ease-out duration-300 hover:shadow-lg"
                     src={subheroBG2}
                     alt="subhero-image2"
                   />
                   <Image
-                    className="absolute top-44 left-4 w-1/2 z-10 border-2
+                    className="absolute top-44 left-4 w-1/2 border-2
                     hover:scale-105 hover:z-50 transition ease-out duration-300 hover:shadow-lg"
                     src={subheroBG3}
                     alt="subhero-image3"
                   />
                   <Image
-                    className="absolute top-48 right-0 w-1/2 z-20 border-2
+                    className="absolute top-48 right-0 w-1/2 z-10 border-2
                     hover:scale-105 hover:z-50 transition ease-out duration-300 hover:shadow-lg"
                     src={subheroBG4}
                     alt="subhero-image4"

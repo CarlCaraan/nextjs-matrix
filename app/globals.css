@@ -37,10 +37,11 @@
 
 @layer base {
 }
+
 @layer components {
   /* NAVIGATION */
   .navlinks {
-    @apply flex text-soft items-center justify-center w-28 hover:bg-panel hover:text-dark;
+    @apply flex text-soft items-center justify-center w-24 lg:w-28 hover:bg-panel hover:text-dark;
   }
   .nl-active {
     @apply border-b-2 border-dark w-full absolute bottom-0;
@@ -60,4 +61,43 @@
   .gradientBorder {
     border-image: linear-gradient(to right, #56b4d3, #80fb8d) 1;
   }
+}
+
+/* ========= Hamburger Button ========= */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  @apply bg-dark;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+.hamburger-middle {
+  transform: translateY(7px);
+}
+.hamburger-top {
+  transform: translateY(14px);
+}
+.open {
+  transform: rotate(90deg);
+}
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+.open .hamburger-middle {
+  display: none;
+}
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
