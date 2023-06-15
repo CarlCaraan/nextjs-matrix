@@ -41,7 +41,7 @@ export default function Home() {
           >
             {/* ========= Herosection Image for mobile ========= */}
             <Image
-              className="block gradientBorder border-b-2 border-r-2 border-t col-span-6 pt-2 pb-6 pr-6 mb-4 shadow-lg
+              className="block gradientBorder border-b-2 border-r-2 border-t col-span-6 pt-2 pb-6 pr-6 mb-4 
               xl:hidden sm:col-span-5 md:col-span-4 md:mb-6"
               src={heroBG}
               alt="hero-bg"
