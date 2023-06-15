@@ -66,9 +66,11 @@ function Navbar() {
           </div>
 
           {/* Contact Us Button */}
-          <button className="gradientButton gradientText hidden md:block">
-            <Link href="#contact-section">Contact Us</Link>
-          </button>
+          <Link href="mailto:matrixsoftwaresolution@gmail.com" target="_blank">
+            <button className="gradientButton gradientText hidden md:block">
+              Contact Us
+            </button>
+          </Link>
 
           {/* Start Hamburger Button */}
           <div className="md:hidden">
@@ -104,19 +106,23 @@ function Navbar() {
         </Link>
         {/* Start Flex Container */}
         <div className="flex flex-col font-sansMedium">
-          <Link className="pl-4 py-2 border-y" href="/">
+          <Link className="pl-4 py-2 border-y" href="/products">
             Products
           </Link>
-          <Link className="pl-4 py-2 border-b" href="/">
+          <Link className="pl-4 py-2 border-b" href="/solutions">
             Solutions
           </Link>
-          <Link className="pl-4 py-2 border-b" href="/">
+          <Link className="pl-4 py-2 border-b" href="/careers">
             Careers
           </Link>
           <Link className="pl-4 py-2 border-b" href="/">
             Support
           </Link>
-          <Link className="pl-4 py-2 border-b" href="/">
+          <Link
+            className="pl-4 py-2 border-b"
+            href="mailto:matrixsoftwaresolution@gmail.com"
+            target="_blank"
+          >
             Contact Us
           </Link>
           <Link className="pl-4 py-2 border-b" href="/">
