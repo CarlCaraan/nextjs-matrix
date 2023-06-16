@@ -120,9 +120,9 @@ function ContactForm() {
               error === "Message field is required"
                 ? "border border-red-600"
                 : ""
-            } border py-1 px-2`}
+            } border py-1 px-2 h-16
+              lg:h-48 2xl:h-16`}
             placeholder="Your inquiries here"
-            rows="3"
             onChange={(e) => setMessage(e.target.value)}
             value={message}
             id="message"

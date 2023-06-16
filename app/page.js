@@ -351,12 +351,29 @@ export default function Home() {
         {/* ========= Start Contact Section ========= */}
         <section className="section-container py-32" id="contact-section">
           {/* Start Flex Container */}
-          <div className="flex gap-4">
+          <div
+            className="flex gap-4 flex-col-reverse 
+            2xl:flex-row"
+          >
             {/* Start Left Part */}
-            <div className="border basis-1/2 relative">
-              <Image className="w-full" src={contactBG} alt="contact-bg" />
-              <div className="absolute top-10 left-0 w-5/6 h-5/6 bg-white px-12">
-                <h3 className="text-3xl text-panel font-sansBold mt-4 text-center">
+            <div
+              className="basis-1/2 relative gradientBorder border-4 
+              sm:border-none"
+            >
+              {/* Background Image */}
+              <Image
+                className="hidden sm:block w-full"
+                src={contactBG}
+                alt="contact-bg"
+              />
+              <div
+                className="bg-white px-12 pb-16
+                sm:mb-0 sm:top-3 sm:absolute sm:left-0 sm:right-8 sm:bottom-3 md:top-10 md:left-0 md:w-5/6 md:h-5/6"
+              >
+                <h3
+                  className="text-3xl text-panel font-sansBold mt-4 text-center
+                  sm:text-panel lg:mt-10 xl:mt-24 2xl:mt-4"
+                >
                   Get in touch
                 </h3>
                 <div className="text-panel text-center leading-none">
@@ -371,8 +388,14 @@ export default function Home() {
             {/* End Left Part */}
 
             {/* Start Right Part */}
-            <div className="basis-1/2">
-              <h1 className="text-5xl mt-12">
+            <div
+              className="basis-1/2 mb-12 
+              2xl:mb-0"
+            >
+              <h1
+                className="text-2xl mt-0 font-sansMedium
+                2xl:mt-12 sm:font-sans sm:text-3xl md:text-4xl lg:text-5xl"
+              >
                 Talk to <span className="gradientText">our expert</span> in
                 product analytics
               </h1>
@@ -385,7 +408,10 @@ export default function Home() {
               <p className="mt-4 font-sansBold">Laguna, Philippines</p>
 
               {/* Start Grid Container */}
-              <div className="mt-4 grid grid-cols-2 gap-[2px]">
+              <div
+                className="mt-4 grid gap-[2px] 
+                md:grid-cols-2"
+              >
                 {/* Card 1 */}
                 <div className="flex flex-col space-y-2 bg-card p-4">
                   <div className="flex gap-4">
