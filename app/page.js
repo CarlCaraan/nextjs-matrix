@@ -160,7 +160,7 @@ export default function Home() {
         >
           {/* Start Flex Container */}
           <div
-            className="flex flex-col 
+            className="flex flex-col gap-4
             lg:flex-row"
           >
             {/* Start Left Part */}
@@ -237,29 +237,29 @@ export default function Home() {
                 />
               </div>
               {/* ========= Desktop 4 Image ========= */}
-              <div className="ml-auto h-full hidden w-[31.5rem] 2xl:w-4/6 lg:block">
+              <div className="ml-auto h-full hidden w-[31.5rem] 2xl:w-5/6 lg:block">
                 {/* Start Image Wrapper */}
                 <div className="relative h-full">
                   <Image
-                    className="absolute top-12 left-0 w-1/2 z-20 border-2
+                    className="absolute top-12 left-0 w-1/2 z-20 border-2 -rotate-2
                     hover:scale-105 hover:z-50 transition ease-out duration-300 hover:shadow-lg"
                     src={subheroBG1}
                     alt="subhero-image1"
                   />
                   <Image
-                    className="absolute top-16 right-4 w-1/2 z-30 border-2
+                    className="absolute top-16 right-4 w-1/2 z-30 border-2 rotate-1
                     hover:scale-105 hover:z-50 transition ease-out duration-300 hover:shadow-lg"
                     src={subheroBG2}
                     alt="subhero-image2"
                   />
                   <Image
-                    className="absolute top-44 left-4 w-1/2 border-2
+                    className="absolute top-[13rem] left-4 w-1/2 border-2 rotate-1
                     hover:scale-105 hover:z-50 transition ease-out duration-300 hover:shadow-lg"
                     src={subheroBG3}
                     alt="subhero-image3"
                   />
                   <Image
-                    className="absolute top-48 right-0 w-1/2 z-10 border-2
+                    className="absolute top-[13.8rem] right-0 w-1/2 z-10 border-2 -rotate-2
                     hover:scale-105 hover:z-50 transition ease-out duration-300 hover:shadow-lg"
                     src={subheroBG4}
                     alt="subhero-image4"
