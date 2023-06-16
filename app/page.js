@@ -270,18 +270,31 @@ export default function Home() {
         {/* ========= End SubHerosection ========= */}
 
         {/* ========= Start Carousel Section ========= */}
-        <div className="bg-card rounded-b-[25%] shadow-sm">
-          <section className="section-container py-24" id="carousel-section">
-            <p className="text-[18px] text-soft uppercase font-sansMedium text-center">
+        <div className="bg-card rounded-b-[50px] 2xl:rounded-b-[25%] shadow-sm">
+          <section
+            className="section-container py-12 
+            sm:py-24"
+            id="carousel-section"
+          >
+            <p
+              className="text-base text-soft uppercase font-sansMedium text-center
+              md:text-[18px]"
+            >
               Custom Web Development Services Tailored to Your Business Needs
             </p>
 
-            <h3 className="text-3xl gradientText uppercase text-center mt-2 font-sansMedium">
+            <h3
+              className="text-lg gradientText uppercase text-center mt-2 font-sansMedium
+              md:text-2xl xl:text-3xl"
+            >
               Transforming Ideas into Stunning Web Solutions
             </h3>
 
             {/* Start Flex Container */}
-            <div className="flex gap-4 mt-16">
+            <div
+              className="flex flex-col gap-4 mt-16 
+              lg:flex-row"
+            >
               <div className="basis-1/3">
                 <Image
                   className="mx-auto"
@@ -309,7 +322,10 @@ export default function Home() {
                   users, drive engagement, and empower your online brand.
                 </p>
               </div>
-              <div className="basis-1/3">
+              <div
+                className="basis-1/3 mt-12
+                lg:mt-0"
+              >
                 <Image
                   className="mx-auto"
                   src={logoDesignSVG}
