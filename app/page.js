@@ -367,7 +367,7 @@ export default function Home() {
             >
               {/* Background Image */}
               <Image
-                className="hidden sm:block w-full"
+                className="hidden sm:block w-full h-full"
                 src={contactBG}
                 alt="contact-bg"
               />
