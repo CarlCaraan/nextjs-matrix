@@ -38,7 +38,7 @@ export default function Home() {
         <section className="section-container" id="herosection">
           <div
             className="grid grid-cols-12 gap-4 py-12 
-            lg:py-16 xl:py-[7.2rem]"
+            lg:py-16 xl:py-[6vw]"
           >
             {/* ========= Herosection Image for mobile ========= */}
             <Image
