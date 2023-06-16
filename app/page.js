@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 // Components
 import Navbar from "@/components/layout/Navbar";
@@ -68,17 +69,19 @@ export default function Home() {
               </h4>
 
               {/* Button */}
-              <button
-                className="flex space-x-2 items-center mt-4 border border-dark px-4 py-2 font-sansMedium group hover:shadow-md
+              <Link href="/solutions">
+                <button
+                  className="flex space-x-2 items-center mt-4 border border-dark px-4 py-2 font-sansMedium group hover:shadow-md
                 2xl:mt-12"
-              >
-                <div>How IT Works</div>
-                <Image
-                  className="w-2 group-hover:ml-4 duration-200"
-                  src={arrowIcon}
-                  alt="arrow-icon"
-                />
-              </button>
+                >
+                  <div>How IT Works</div>
+                  <Image
+                    className="w-2 group-hover:ml-4 duration-200"
+                    src={arrowIcon}
+                    alt="arrow-icon"
+                  />
+                </button>
+              </Link>
 
               <p
                 className="text-soft mt-4 w-full 
@@ -197,9 +200,11 @@ export default function Home() {
               </p>
 
               {/* Button */}
-              <button className="gradientButton gradientText mt-8">
-                Read more
-              </button>
+              <Link href="/solutions">
+                <button className="gradientButton gradientText mt-8">
+                  Read more
+                </button>
+              </Link>
             </div>
             {/* End Left Part */}
 
