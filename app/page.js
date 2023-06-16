@@ -62,7 +62,7 @@ export default function Home() {
 
               <h4
                 className="text-base text-soft mt-4
-                sm:text-xl 2xl:mt-12 xl:text-2xl"
+                sm:text-xl 2xl:mt-8 xl:text-2xl"
               >
                 Build your business with confidence, transform your online
                 vision into reality
@@ -72,7 +72,7 @@ export default function Home() {
               <Link href="/solutions">
                 <button
                   className="flex space-x-2 items-center mt-4 border border-dark px-4 py-2 font-sansMedium group hover:shadow-md
-                2xl:mt-12"
+                  2xl:mt-8"
                 >
                   <div>How IT Works</div>
                   <Image
@@ -85,7 +85,7 @@ export default function Home() {
 
               <p
                 className="text-soft mt-4 w-full 
-                lg:w-2/3 2xl:mt-12 xl:w-full"
+                lg:w-2/3 2xl:mt-8 xl:w-full"
               >
                 Matrix is a dynamic, innovative, and forward-thinking start-up
                 company based in <span className="font-sansMedium">Laguna</span>{" "}
@@ -97,7 +97,7 @@ export default function Home() {
               {/* Start Flex Container */}
               <div
                 className="flex flex-col gap-[2px] mt-4
-                sm:mt-12 2xl:mt-24 sm:flex-row"
+                sm:mt-12 2xl:mt-12 sm:flex-row"
               >
                 <div
                   className="bg-card px-6 pt-4 pb-8 basis-1/3 hover:bg-panel duration-200
