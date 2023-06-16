@@ -372,8 +372,8 @@ export default function Home() {
                 alt="contact-bg"
               />
               <div
-                className="bg-white px-12 pb-16
-                sm:mb-0 sm:top-3 sm:absolute sm:left-0 sm:right-8 sm:bottom-3 md:top-10 md:left-0 md:w-5/6 md:h-5/6"
+                className="bg-white px-4 pb-16
+                sm:px-12 sm:mb-0 sm:top-3 sm:absolute sm:left-0 sm:right-8 sm:bottom-3 md:top-10 md:left-0 md:w-5/6 md:h-5/6"
               >
                 <h3
                   className="text-3xl text-panel font-sansBold mt-4 text-center

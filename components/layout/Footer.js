@@ -61,11 +61,11 @@ function Footer() {
         {/* Start Flex Container */}
         <div
           className="flex flex-col justify-between mt-4
-          md:flex-row"
+          lg:flex-row"
         >
           <div
             className="text-center
-            xl:w-1/3 md:text-left md:w-1/2"
+            2xl:w-1/3 lg:text-left lg:w-1/2"
           >
             Matrix focus on responsive design, user experience, and the latest
             technologies, we strive to deliver exceptional results that help our
@@ -74,11 +74,11 @@ function Footer() {
           {/* Footer Links */}
           <div
             className="text-panel 
-            xl:w-1/3 md:w-1/2"
+            xl:w-1/3 lg:w-1/2"
           >
             <div
               className="flex flex-col space-y-4 text-center justify-center mt-12
-              md:justify-end md:mt-0 sm:space-x-4 sm:flex-row sm:space-y-0"
+              lg:justify-end md:mt-4 lg:mt-0 sm:space-x-4 sm:flex-row sm:space-y-0"
             >
               <div>
                 <Link className="underline hover:no-underline" href="/">
@@ -112,7 +112,7 @@ function Footer() {
 
         <p
           className="text-panel text-sm mt-12 font-sansMedium text-center
-          md:text-left md:float-right md:mt-4"
+          lg:text-left lg:float-right md:mt-10 lg:mt-4"
         >
           Copyright ©{new Date().getFullYear()}{" "}
           <span className="gradientText">Matrix Software Solution</span> All
