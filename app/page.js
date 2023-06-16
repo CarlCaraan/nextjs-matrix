@@ -133,12 +133,16 @@ export default function Home() {
               className="hidden col-span-7 relative 
               xl:block"
             >
+              {/* ========= Herosection Image for Desktop ========= */}
               <Image
                 className="w-5/6 absolute bottom-0"
                 src={heroBG}
                 alt="hero-bg"
               />
-              <div className="gradientBorder border-4 w-3/5 h-full right-0 -bottom-12 2xl:-bottom-16 absolute -z-10"></div>
+              <div
+                className="gradientBorder border-4 w-3/5 h-full right-0 -bottom-12 absolute -z-10 
+                2xl:-bottom-16"
+              ></div>
             </div>
             {/* End Right Part */}
           </div>
@@ -146,16 +150,26 @@ export default function Home() {
         {/* ========= End Herosection ========= */}
 
         {/* ========= Start SubHerosection ========= */}
-        <section className="section-container my-28" id="sub-herosection">
+        <section
+          className="section-container mt-0 mb-16 
+          sm:mt-12 lg:my-28"
+          id="sub-herosection"
+        >
           {/* Start Flex Container */}
-          <div className="flex">
+          <div
+            className="flex flex-col 
+            lg:flex-row"
+          >
             {/* Start Left Part */}
             <div className="basis-1/2">
               <h6 className="uppercase text-soft font-sansMedium">
                 Web agency based on laguna, Philippines
               </h6>
 
-              <h4 className="gradientText uppercase font-sansBold gradient text-2xl mt-4">
+              <h4
+                className="text-lg gradientText uppercase font-sansBold gradient mt-4
+                sm:text-2xl"
+              >
                 Creative business design ideas
               </h4>
 
@@ -190,8 +204,35 @@ export default function Home() {
             {/* End Left Part */}
 
             {/* Start Right Part */}
-            <div className="basis-1/2 ">
-              <div className="ml-auto w-4/6 h-full">
+            <div className="basis-1/2">
+              {/* ========= Mobile 4 Image ========= */}
+              <div
+                className="grid grid-cols-2 gap-2 mt-8
+                lg:hidden"
+              >
+                <Image
+                  className="border-2"
+                  src={subheroBG1}
+                  alt="subhero-image1"
+                />
+                <Image
+                  className="border-2"
+                  src={subheroBG2}
+                  alt="subhero-image2"
+                />
+                <Image
+                  className="border-2"
+                  src={subheroBG4}
+                  alt="subhero-image4"
+                />
+                <Image
+                  className="border-2"
+                  src={subheroBG3}
+                  alt="subhero-image3"
+                />
+              </div>
+              {/* ========= Desktop 4 Image ========= */}
+              <div className="ml-auto h-full hidden w-[31.5rem] 2xl:w-4/6 lg:block">
                 {/* Start Image Wrapper */}
                 <div className="relative h-full">
                   <Image
