@@ -3,6 +3,8 @@ import Link from "next/link";
 
 // Components
 import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import ContactForm from "@/components/ContactForm";
 
 // Images
 import arrowIcon from "../public/images/landing_page/arrow-icon-gradient.png";
@@ -17,13 +19,10 @@ import contactBG from "../public/images/landing_page/contact-bg.jpg";
 import webDesignSVG from "../public/images/landing_page/webdesign-svg-icon.svg";
 import websiteSVG from "../public/images/landing_page/website-svg-icon.svg";
 import logoDesignSVG from "../public/images/landing_page/logodesign-svg-icon.svg";
-
 import locationSVG from "../public/images/landing_page/contact-section/location-svg-icon.svg";
 import telephoneSVG from "../public/images/landing_page/contact-section/telephone-svg-icon.svg";
 import envelopeSVG from "../public/images/landing_page/contact-section/envelope-svg-icon.svg";
 import clockSVG from "../public/images/landing_page/contact-section/clock-svg-icon.svg";
-import ContactForm from "@/components/ContactForm";
-import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
@@ -518,12 +517,12 @@ export default function Home() {
           {/* End Flex Container */}
         </section>
         {/* ========= End Contact Section ========= */}
-
-        {/* ========= Start Footer ========= */}
-        <Footer />
-        {/* ========= End Footer ========= */}
       </main>
       {/* End Main Content */}
+
+      {/* ========= Start Footer ========= */}
+      <Footer />
+      {/* ========= End Footer ========= */}
     </>
   );
 }
