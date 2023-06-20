@@ -120,6 +120,7 @@ export default function Products() {
     slidesToScroll: 6,
     autoplaySpeed: 0,
     cssEase: "linear",
+    draggable: false,
   };
 
   return (
@@ -150,6 +151,7 @@ export default function Products() {
                     key={projectImage.id}
                     src={projectImage.src}
                     alt={projectImage.src}
+                    loading="lazy"
                   />
                 );
               })}
@@ -164,6 +166,7 @@ export default function Products() {
                     key={projectImage.id}
                     src={projectImage.src}
                     alt={projectImage.src}
+                    loading="lazy"
                   />
                 );
               })}
