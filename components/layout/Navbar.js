@@ -26,7 +26,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="bg-white border border-b-1">
+      <nav className="bg-white border-b">
         <div className="section-container flex justify-between items-center">
           {/* Logo */}
           <Link href="/">
