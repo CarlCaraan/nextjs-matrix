@@ -1,10 +1,6 @@
 "use client";
 import Image from "next/image";
 
-// Swiper JS Library
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper.min.css";
-
 // Components
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
@@ -20,12 +16,16 @@ import project6 from "../../public/images/products/project6.png";
 
 const projectImages = [
   {
-    id: 1,
+    id: 0,
     src: project0,
   },
   {
-    id: 2,
+    id: 1,
     src: project1,
+  },
+  {
+    id: 2,
+    src: project2,
   },
   {
     id: 3,
@@ -46,18 +46,6 @@ const projectImages = [
 ];
 
 export default function Products() {
-  const swiperSettings = {
-    slidesPerView: 4,
-    spaceBetween: 20,
-    direction: "horizontal",
-    loop: true,
-    speed: 5000, // Adjust the speed of the animation (in milliseconds)
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
-    },
-  };
-
   return (
     <>
       {/* ========= Start Navigation ========= */}
@@ -76,16 +64,18 @@ export default function Products() {
           </p>
 
           {/* Start Carousel */}
-          <Swiper className="my-12" {...swiperSettings}>
+          <div className="my-12">
             {projectImages &&
               projectImages.map((projectImage) => {
                 return (
-                  <SwiperSlide key={projectImage.id}>
-                    <Image src={projectImage.src} alt={projectImage.src} />
-                  </SwiperSlide>
+                  <Image
+                    key={projectImage.id}
+                    src={projectImage.src}
+                    alt={projectImage.src}
+                  />
                 );
               })}
-          </Swiper>
+          </div>
           {/* End Carousel */}
         </section>
         {/* ========= End Carousel Section ========= */}
