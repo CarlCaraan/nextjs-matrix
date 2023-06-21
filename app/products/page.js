@@ -174,6 +174,12 @@ export default function Products() {
           {/* End Carousel */}
         </section>
         {/* ========= End Carousel Section ========= */}
+
+        {/* ========= Start Map Section ========= */}
+        <section className="bg-primary mt-24 py-24">
+          <div className="section-container">asd</div>
+        </section>
+        {/* ========= End Map Section ========= */}
       </main>
       {/* ========= End Main Content ========= */}
 
