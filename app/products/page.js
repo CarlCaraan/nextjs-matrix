@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
+import Link from "next/link";
 
 // react-slick Libary
 import Slider from "react-slick";
@@ -30,6 +31,9 @@ import project12 from "../../public/images/products/project12.png";
 import project13 from "../../public/images/products/project13.png";
 import project14 from "../../public/images/products/project14.png";
 import project15 from "../../public/images/products/project15.png";
+// SVG
+import locationSVG from "../../public/images/landing_page/contact-section/location-svg-icon.svg";
+import telephoneSVG from "../../public/images/landing_page/contact-section/telephone-svg-icon.svg";
 
 const projectImagesX = [
   {
@@ -176,7 +180,7 @@ export default function Products() {
         {/* ========= End Carousel Section ========= */}
 
         {/* ========= Start Map Section ========= */}
-        <section className="mt-32 mb-24">
+        <section className="mt-32">
           {/* Container */}
           <div className="section-container ">
             <h2 className="text-4xl text-center">Where to find us?</h2>
@@ -187,7 +191,7 @@ export default function Products() {
             </p>
           </div>
 
-          {/* Map */}
+          {/* Start Map */}
           <iframe
             className="mt-12 w-full h-[30rem]"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d241.67922529230734!2d121.39708924445328!3d14.26094247701575!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397e3aad5147297%3A0xb2cb5699ab7d9b4d!2s796W%2B9RW%2C%20Sampaguita%20St%2C%20Santa%20Cruz%2C%20Laguna!5e0!3m2!1sen!2sph!4v1687399910745!5m2!1sen!2sph"
@@ -195,6 +199,84 @@ export default function Products() {
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
+          {/* End Map */}
+
+          <div className="bg-[#19B89B] h-[30rem] relative">
+            {/* Start Absolute Card */}
+            <div className="absolute -top-24 bg-white border-secondary border-4 py-4 px-6 rounded w-1/3 left-1/3 flex">
+              {/* Left Part */}
+              <div className="basis-1/2 py-8 border-r-2 flex flex-col space-y-4">
+                {/* Address */}
+                <div className="flex gap-4">
+                  <div className="basis-1/8">
+                    <Image
+                      className="w-[32.5px] mt-1"
+                      src={locationSVG}
+                      alt="location-svg"
+                    />
+                  </div>
+                  <div className="basis-7/8 text-soft">
+                    National Highway, Sitio Ilaya, Brgy. Sto Domingo, Bay Laguna
+                  </div>
+                </div>
+                {/* Contact Number */}
+                <div className="flex gap-4">
+                  <div className="basis-1/8">
+                    <Image
+                      className="w-4 mt-1"
+                      src={telephoneSVG}
+                      alt="telephone-svg"
+                    />
+                  </div>
+                  <div className="basis-7/8 text-soft underline">
+                    +63930-547-5411
+                  </div>
+                </div>
+              </div>
+              {/* Right Part */}
+              <div className="basis-1/2 py-8 flex flex-col space-y-4 pl-4">
+                {/* Address */}
+                <div className="flex gap-4">
+                  <div className="basis-1/8">
+                    <Image
+                      className="w-7 mt-1"
+                      src={locationSVG}
+                      alt="location-svg"
+                    />
+                  </div>
+                  <div className="basis-7/8 text-soft">
+                    Brgy. Bubukal, Sitio Sampaguita, Sta. Cruz Laguna
+                  </div>
+                </div>
+                {/* Contact Number */}
+                <div className="flex gap-4">
+                  <div className="basis-1/8">
+                    <Image
+                      className="w-4 mt-1"
+                      src={telephoneSVG}
+                      alt="telephone-svg"
+                    />
+                  </div>
+                  <div className="basis-7/8 text-soft underline">
+                    +63955-916-8806
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* End Absolute Card */}
+
+            <h1 className="text-5xl text-white text-center pt-44">Join Us</h1>
+            <p className="font-serif mt-4 text-center text-white text-xl">
+              “Let&#39;s get started and make your mark on the digital world!”
+            </p>
+            <div className="text-center mt-12">
+              <Link href="/solutions">
+                <button className="bg-white px-6 py-2 rounded-sm shadow font-sansMedium">
+                  Learn more
+                </button>
+              </Link>
+            </div>
+          </div>
         </section>
         {/* ========= End Map Section ========= */}
       </main>
