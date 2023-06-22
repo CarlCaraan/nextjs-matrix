@@ -176,8 +176,25 @@ export default function Products() {
         {/* ========= End Carousel Section ========= */}
 
         {/* ========= Start Map Section ========= */}
-        <section className="bg-primary mt-24 py-24">
-          <div className="section-container">asd</div>
+        <section className="mt-32 mb-24">
+          {/* Container */}
+          <div className="section-container ">
+            <h2 className="text-4xl text-center">Where to find us?</h2>
+            <p className="text-soft mt-4 text-center md:max-w-lg mx-auto">
+              Arrange an appointment for a consultation meeting by visiting one
+              of our nearby offices or reaching us through the email address
+              provided.
+            </p>
+          </div>
+
+          {/* Map */}
+          <iframe
+            className="mt-12 w-full h-[30rem]"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d241.67922529230734!2d121.39708924445328!3d14.26094247701575!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397e3aad5147297%3A0xb2cb5699ab7d9b4d!2s796W%2B9RW%2C%20Sampaguita%20St%2C%20Santa%20Cruz%2C%20Laguna!5e0!3m2!1sen!2sph!4v1687399910745!5m2!1sen!2sph"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </section>
         {/* ========= End Map Section ========= */}
       </main>
