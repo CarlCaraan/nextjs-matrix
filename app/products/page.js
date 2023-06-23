@@ -204,7 +204,10 @@ export default function Products() {
         {/* ========= End Carousel Section ========= */}
 
         {/* ========= Start Map Section ========= */}
-        <section className="mt-12 md:mt-32">
+        <section
+          className="mt-12 
+          md:mt-32"
+        >
           {/* Container */}
           <div className="section-container ">
             <h2
@@ -233,16 +236,25 @@ export default function Products() {
           ></iframe>
           {/* End Map */}
 
-          <div className="bg-[#19B89B] h-[30rem] relative">
+          <div
+            className="bg-[#19B89B] h-[37rem] relative 
+            md:h-[30rem]"
+          >
             {/* Start Absolute Card */}
-            <div className="absolute -top-24 bg-white border-secondary border-4 py-4 px-6 rounded w-1/3 left-1/3 flex">
+            <div
+              className="-top-24 bg-white border-secondary border-4 py-4 px-6 flex inset-x-12 flex-col
+              2xl:inset-x-96 xl:inset-x-56 lg:inset-x-32 md:inset-x-16 md:rounded-2xl md:absolute xl:-top-20 md:flex-row"
+            >
               {/* Left Part */}
-              <div className="basis-1/2 py-8 border-r-2 flex flex-col space-y-4">
+              <div
+                className="basis-1/2 py-8 flex flex-col space-y-4 
+                md:border-r-2"
+              >
                 {/* Address */}
                 <div className="flex gap-4">
                   <div className="basis-1/8">
                     <Image
-                      className="w-[32.5px] mt-1"
+                      className="w-5 mt-1"
                       src={locationSVG}
                       alt="location-svg"
                     />
@@ -266,12 +278,15 @@ export default function Products() {
                 </div>
               </div>
               {/* Right Part */}
-              <div className="basis-1/2 py-8 flex flex-col space-y-4 pl-4">
+              <div
+                className="basis-1/2 py-8 flex flex-col space-y-4 
+                md:pl-4"
+              >
                 {/* Address */}
                 <div className="flex gap-4">
                   <div className="basis-1/8">
                     <Image
-                      className="w-7 mt-1"
+                      className="w-5 mt-1"
                       src={locationSVG}
                       alt="location-svg"
                     />
@@ -297,11 +312,22 @@ export default function Products() {
             </div>
             {/* End Absolute Card */}
 
-            <h1 className="text-5xl text-white text-center pt-44">Join Us</h1>
-            <p className="font-serif mt-4 text-center text-white text-xl">
+            <h1
+              className="text-3xl text-white text-center pt-12 
+              md:pt-44 md:text-5xl"
+            >
+              Join Us
+            </h1>
+            <p
+              className="font-serif mt-4 text-center text-white 
+              sm:text-xl"
+            >
               “Let&#39;s get started and make your mark on the digital world!”
             </p>
-            <div className="text-center mt-12">
+            <div
+              className="text-center mt-8
+              md:mt-12"
+            >
               <Link href="/solutions">
                 <button className="bg-white px-6 py-2 rounded-sm shadow font-sansMedium">
                   Learn more
