@@ -247,8 +247,8 @@ export default function Products() {
             >
               {/* Left Part */}
               <div
-                className="basis-1/2 py-8 flex flex-col space-y-4 
-                md:border-r-2"
+                className="basis-1/2 py-4 flex flex-col space-y-2
+                md:border-r-2 sm:space-y-4 sm:py-8"
               >
                 {/* Address */}
                 <div className="flex gap-4">
@@ -279,8 +279,8 @@ export default function Products() {
               </div>
               {/* Right Part */}
               <div
-                className="basis-1/2 py-8 flex flex-col space-y-4 
-                md:pl-4"
+                className="basis-1/2 flex flex-col space-y-2 py-4
+                md:pl-4 sm:space-y-4 sm:py-8"
               >
                 {/* Address */}
                 <div className="flex gap-4">
@@ -313,15 +313,12 @@ export default function Products() {
             {/* End Absolute Card */}
 
             <h1
-              className="text-3xl text-white text-center pt-12 
+              className="text-3xl text-white text-center pt-20
               md:pt-44 md:text-5xl"
             >
               Join Us
             </h1>
-            <p
-              className="font-serif mt-4 text-center text-white 
-              sm:text-xl"
-            >
+            <p className="text-xl font-serif mt-4 text-center text-white">
               “Let&#39;s get started and make your mark on the digital world!”
             </p>
             <div
