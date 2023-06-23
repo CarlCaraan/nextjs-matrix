@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import Link from "next/link";
 
-// react-slick Libary
+// react-slick Library
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -120,11 +120,27 @@ export default function Products() {
     dots: false,
     infinite: true,
     autoplay: true,
-    slidesToShow: 4,
-    slidesToScroll: 6,
     autoplaySpeed: 0,
     cssEase: "linear",
     draggable: false,
+    slidesToShow: 4,
+    slidesToScroll: 6,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -137,8 +153,16 @@ export default function Products() {
       <main>
         {/* ========= Start Carousel Section ========= */}
         <section className="section-container" id="carousel">
-          <h1 className="text-5xl mt-24">Discover our works</h1>
-          <p className="text-xl mt-12 w-1/2 text-soft">
+          <h1
+            className="text-2xl font-sansMedium mt-12 
+            md:mt-24 md:text-3xl lg:text-4xl xl:text-5xl md:font-sans"
+          >
+            Discover our works
+          </h1>
+          <p
+            className="text-base mt-4 text-soft 
+            xl:w-1/2 md:text-xl md:mt-12"
+          >
             See how our expertise in web development has helped businesses like
             yours achieve online success through innovative and customized
             solutions
@@ -180,11 +204,19 @@ export default function Products() {
         {/* ========= End Carousel Section ========= */}
 
         {/* ========= Start Map Section ========= */}
-        <section className="mt-32">
+        <section className="mt-12 md:mt-32">
           {/* Container */}
           <div className="section-container ">
-            <h2 className="text-4xl text-center">Where to find us?</h2>
-            <p className="text-soft mt-4 text-center md:max-w-lg mx-auto">
+            <h2
+              className="text-center text-2xl font-sansMedium
+              xl:text-4xl lg:text-3xl lg:font-sans"
+            >
+              Where to find us?
+            </h2>
+            <p
+              className="text-soft mt-4 text-center mx-auto 
+              md:max-w-lg"
+            >
               Arrange an appointment for a consultation meeting by visiting one
               of our nearby offices or reaching us through the email address
               provided.
@@ -195,9 +227,9 @@ export default function Products() {
           <iframe
             className="mt-12 w-full h-[30rem]"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d241.67922529230734!2d121.39708924445328!3d14.26094247701575!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397e3aad5147297%3A0xb2cb5699ab7d9b4d!2s796W%2B9RW%2C%20Sampaguita%20St%2C%20Santa%20Cruz%2C%20Laguna!5e0!3m2!1sen!2sph!4v1687399910745!5m2!1sen!2sph"
-            allowfullscreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
           ></iframe>
           {/* End Map */}
 
