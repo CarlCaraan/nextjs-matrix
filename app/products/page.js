@@ -312,6 +312,7 @@ export default function Products() {
             </div>
             {/* End Absolute Card */}
 
+            {/* Start Green Content */}
             <h1
               className="text-3xl text-white text-center pt-20
               md:pt-44 md:text-5xl"
@@ -331,6 +332,7 @@ export default function Products() {
                 </button>
               </Link>
             </div>
+            {/* End Green Content */}
           </div>
         </section>
         {/* ========= End Map Section ========= */}
