@@ -8,6 +8,9 @@ import Footer from "@/components/layout/Footer";
 // Images
 import solutionsBG from "../../public/images/solutions/solutions-bg.jpg";
 
+// SVG
+import calendarIcon from "../../public/images/solutions/calendar-icon.svg";
+
 export default function Solutions() {
   return (
     <>
@@ -62,8 +65,13 @@ export default function Solutions() {
             {/* Button */}
             <div>
               <Link href="/">
-                <button className="border-2 px-4 py-2 border-secondary bg-secondary hover:gradientBorder hover:drop-shadow duration-200">
-                  Book a meeting
+                <button className="border-2 px-4 py-2 border-secondary bg-secondary hover:gradientBorder hover:drop-shadow duration-200 flex space-x-4 items-center">
+                  <span>Book a meeting</span>
+                  <Image
+                    className="w-4"
+                    src={calendarIcon}
+                    alt="booking-icon"
+                  />
                 </button>
               </Link>
             </div>
