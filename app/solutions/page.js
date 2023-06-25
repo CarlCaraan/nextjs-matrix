@@ -70,7 +70,7 @@ export default function Solutions() {
                   <Image
                     className="w-4"
                     src={calendarIcon}
-                    alt="booking-icon"
+                    alt="calendar-icon"
                   />
                 </button>
               </Link>
