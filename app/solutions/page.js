@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 // Components
 import Navbar from "@/components/layout/Navbar";
@@ -52,6 +53,14 @@ export default function Solutions() {
               for your business. Contact us today to learn how we can help
               elevate your brand.
             </p>
+            {/* Button */}
+            <div>
+              <Link href="/">
+                <button className="border-2 px-4 py-2 border-secondary bg-secondary hover:gradientBorder hover:drop-shadow duration-200">
+                  Book a meeting
+                </button>
+              </Link>
+            </div>
           </div>
         </section>
         {/* ========= End Hero Section ========= */}
