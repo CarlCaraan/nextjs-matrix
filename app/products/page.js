@@ -242,7 +242,7 @@ export default function Products() {
           >
             {/* Start Absolute Card */}
             <div
-              className="-top-24 bg-white border-secondary border-4 py-4 px-6 flex inset-x-12 flex-col
+              className="-top-24 bg-white border-secondary border-4 py-4 px-6 flex inset-x-12 flex-col drop-shadow
               2xl:inset-x-96 xl:inset-x-56 lg:inset-x-32 md:inset-x-16 md:rounded-2xl md:absolute xl:-top-20 md:flex-row"
             >
               {/* Left Part */}
@@ -327,7 +327,7 @@ export default function Products() {
               md:mt-12"
             >
               <Link href="/solutions">
-                <button className="bg-white px-6 py-2 rounded-sm shadow font-sansMedium">
+                <button className="bg-white px-6 py-2 rounded-sm drop-shadow font-sansMedium">
                   Learn more
                 </button>
               </Link>
