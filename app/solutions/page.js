@@ -19,8 +19,8 @@ export default function Solutions() {
       <main>
         {/* ========= Start Hero Section ========= */}
         <section
-          className="bg-slate-500 overflow-hidden flex items-center relative h-[50vh]
-          2xl:h-[30vw] sm:h-screen"
+          className="overflow-hidden flex items-center relative h-[50vh]
+          2xl:h-[35vw] sm:h-[50vw]"
           id="herosection"
         >
           <Image
