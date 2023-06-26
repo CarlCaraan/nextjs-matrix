@@ -108,7 +108,7 @@ export default function Solutions() {
               </p>
             </div>
             <div
-              className="bg-card w-full drop-shadow rounded-sm flex flex-col items-center px-8 py-6
+              className="bg-card w-full drop-shadow rounded-sm flex flex-col items-center px-8 py-6 gradientBorder border-4
               2xl:px-24 2xl:py-12"
             >
               <Image className="w-32" src={standardIcon} alt={standardIcon} />
