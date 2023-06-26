@@ -7,6 +7,7 @@ import Footer from "@/components/layout/Footer";
 
 // Images
 import solutionsBG from "../../public/images/solutions/solutions-bg.jpg";
+import contextBG from "../../public/images/solutions/context-bg.jpg";
 
 // SVG
 import calendarIcon from "../../public/images/solutions/calendar-icon.svg";
@@ -144,6 +145,179 @@ export default function Solutions() {
           {/* End Flex Container */}
         </section>
         {/* ========= End Three Cards Section ========= */}
+
+        {/* ========= Start Bottom Content Section ========= */}
+        <section className="section-container pb-24" id="bottom-content">
+          {/* Start Flex Container */}
+          <div
+            className="flex flex-col-reverse 
+            lg:space-x-12 lg:flex-row"
+          >
+            {/* Start Left Part */}
+            <div className="lg:w-7/12">
+              <h4
+                className="text-lg font-sansMedium
+                sm:text-2xl sm:font-sans"
+              >
+                Factors to take into account that impact the pricing of web
+                design:
+              </h4>
+              <div
+                className="flex flex-col space-y-4 mt-4
+                sm:mt-12"
+              >
+                {/* Item 1 */}
+                <div className="flex flex-row space-x-2">
+                  <div>1.</div>
+                  <div>
+                    <span className="font-sansMedium">
+                      Complexity of the project:
+                    </span>{" "}
+                    The complexity of the website is a major factor in
+                    determining the cost. A simple brochure-style website with a
+                    few pages will generally be less expensive than a complex
+                    e-commerce website with multiple product pages, payment
+                    gateways, and custom functionality.
+                  </div>
+                </div>
+
+                {/* Item 2 */}
+                <div className="flex flex-row space-x-2">
+                  <div>2.</div>
+                  <div>
+                    <span className="font-sansMedium">
+                      Design and customization:
+                    </span>{" "}
+                    The level of design and customization required for the
+                    website can impact the price. If you need a unique and
+                    visually appealing design that requires extensive
+                    customization, it will likely cost more compared to using
+                    pre-designed templates.
+                  </div>
+                </div>
+
+                {/* Item 3 */}
+                <div className="flex flex-row space-x-2">
+                  <div>3.</div>
+                  <div>
+                    <span className="font-sansMedium">
+                      Functionality and features:
+                    </span>{" "}
+                    The specific functionalities and features you need on your
+                    website will affect the cost. For example, integrating a
+                    content management system (CMS), implementing a blog, adding
+                    a contact form, or creating a user registration system can
+                    increase the overall cost.
+                  </div>
+                </div>
+
+                {/* Item 4 */}
+                <div className="flex flex-row space-x-2">
+                  <div>4.</div>
+                  <div>
+                    <span className="font-sansMedium">Responsive design:</span>{" "}
+                    Responsive design ensures that your website is optimized for
+                    different devices, such as desktops, tablets, and mobile
+                    phones. Creating a responsive design may require additional
+                    effort and resources, which can increase the price.
+                  </div>
+                </div>
+
+                {/* Item 5 */}
+                <div className="flex flex-row space-x-2">
+                  <div>5.</div>
+                  <div>
+                    <span className="font-sansMedium"> Content creation:</span>{" "}
+                    If you need assistance with creating content for your
+                    website, such as copywriting, graphic design, or multimedia
+                    elements, it may add to the overall cost.
+                  </div>
+                </div>
+
+                {/* Item 6 */}
+                <div className="flex flex-row space-x-2">
+                  <div>6.</div>
+                  <div>
+                    <span className="font-sansMedium">
+                      E-commerce functionality:
+                    </span>{" "}
+                    If you plan to sell products or services directly through
+                    your website, implementing e-commerce functionality,
+                    including product listings, shopping carts, and payment
+                    gateways, can significantly impact the cost.
+                  </div>
+                </div>
+
+                {/* Item 7 */}
+                <div className="flex flex-row space-x-2">
+                  <div>7.</div>
+                  <div>
+                    <span className="font-sansMedium">SEO considerations:</span>{" "}
+                    Incorporating search engine optimization (SEO) best
+                    practices into your website design can enhance its
+                    visibility in search engine rankings. If you require SEO
+                    services along with web design, it may affect the price.
+                  </div>
+                </div>
+
+                {/* Item 8 */}
+                <div className="flex flex-row space-x-2">
+                  <div>8.</div>
+                  <div>
+                    <span className="font-sansMedium">
+                      Timeline and urgency:
+                    </span>{" "}
+                    If you have a tight deadline or require expedited delivery,
+                    it may incur additional costs, as it may require allocating
+                    more resources or working overtime to meet your
+                    requirements.
+                  </div>
+                </div>
+
+                {/* Item 9 */}
+                <div className="flex flex-row space-x-2">
+                  <div>9.</div>
+                  <div>
+                    <span className="font-sansMedium">
+                      Experience and expertise of the web designer:
+                    </span>{" "}
+                    The skill level and reputation of the web designer or web
+                    design agency can affect pricing. Experienced and reputable
+                    designers often charge higher rates due to their expertise
+                    and track record.
+                  </div>
+                </div>
+
+                {/* Item 10 */}
+                <div className="flex flex-row space-x-2">
+                  <div>10.</div>
+                  <div>
+                    <span className="font-sansMedium">
+                      Additional services and ongoing maintenance:
+                    </span>{" "}
+                    Additional services like website maintenance, updates,
+                    hosting, domain registration, and technical support may be
+                    offered at an additional cost.
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* End Left Part */}
+
+            {/* Start Right Part */}
+            <div className="lg:w-5/12">
+              <Image
+                className="w-full drop-shadow rounded-lg mb-12
+                lg:mt-12 lg:mb-0"
+                src={contextBG}
+                alt="context-bg"
+              />
+            </div>
+            {/* End Right Part */}
+          </div>
+          {/* End Flex Container */}
+        </section>
+        {/* ========= End Bottom Content Section ========= */}
       </main>
       {/* ========= End Main Content ========= */}
 
