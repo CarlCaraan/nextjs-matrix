@@ -85,8 +85,14 @@ export default function Solutions() {
         {/* ========= Start Three Cards Section ========= */}
         <section className="section-container py-24" id="three-cards-section">
           {/* Start Flex Container */}
-          <div className="flex space-x-4">
-            <div className="bg-card w-full px-24 py-12 drop-shadow rounded-sm flex flex-col items-center">
+          <div
+            className="flex flex-col space-y-4 space-x-0
+            lg:flex-row lg:space-y-0 lg:space-x-4"
+          >
+            <div
+              className="bg-card w-full drop-shadow rounded-sm flex flex-col items-center px-8 py-6
+              2xl:px-24 2xl:py-12"
+            >
               <Image
                 className="w-24 mt-5"
                 src={startupIcon}
@@ -100,7 +106,10 @@ export default function Solutions() {
                 as it has the potential to generate profitable outcomes.
               </p>
             </div>
-            <div className="bg-card w-full px-24 py-12 drop-shadow rounded-sm flex flex-col gradientBorder border-2 items-center">
+            <div
+              className="bg-card w-full drop-shadow rounded-sm flex flex-col items-center px-8 py-6
+              2xl:px-24 2xl:py-12"
+            >
               <Image className="w-32" src={standardIcon} alt={standardIcon} />
               <h4 className="font-sansBold text-2xl mt-2">Small-Scale</h4>
               <h5 className="text-xl text-[#ACACAC]">Standard</h5>{" "}
@@ -110,13 +119,16 @@ export default function Solutions() {
                 the internet.
               </p>
             </div>
-            <div className="bg-card w-full px-24 py-12 drop-shadow rounded-sm flex flex-col items-center">
+            <div
+              className="bg-card w-full drop-shadow rounded-sm flex flex-col items-center px-8 py-6
+              2xl:px-24 2xl:py-12"
+            >
               <Image
                 className="w-24 mt-4"
                 src={enterpriseIcon}
                 alt={enterpriseIcon}
               />
-              <h4 className="font-sansBold text-2xl mt-[24px]">
+              <h4 className="font-sansBold text-2xl mt-[24.5px]">
                 Enterprise Website
               </h4>
               <h5 className="text-xl text-[#ACACAC]">Plus</h5>
