@@ -220,18 +220,33 @@ export default function Careers() {
           id="sub-card"
         >
           {/* Start Flex Container */}
-          <div className="bg-card py-6 flex">
+          <div
+            className="bg-card py-6 flex flex-col 
+            lg:flex-row"
+          >
             {/* Image */}
-            <divi className="px-24 py-4 basis-4/12 border-r-4 gradientBorderVertical">
+            <div
+              className="flex items-center px-[4.8vw] py-4 basis-4/12 justify-center
+              lg:border-r-4 lg:gradientBorderVertical"
+            >
               <Image src={php} alt={php} />
-            </divi>
+            </div>
             {/* Text */}
-            <div className="basis-8/12 px-24 py-12">
-              <h5 className="text-xl uppercase font-sansMedium">
+            <div
+              className="basis-8/12 px-4 py-6 text-center 
+              lg:text-center sm:px-24 sm:py-12"
+            >
+              <h5
+                className="text-lg uppercase font-sansMedium 
+                sm:text-xl"
+              >
                 Unlock the Web&#39;s Potential: Join Our Team of Innovative Web
                 Developers!
               </h5>
-              <p className="text-xl text-soft mt-4">
+              <p
+                className="text-base text-soft mt-4 
+                sm:text-xl"
+              >
                 We are seeking a skilled web developer proficient in HTML, CSS,
                 and basic JavaScript, with some experience in PHP.
               </p>
