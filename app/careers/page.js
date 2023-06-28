@@ -7,6 +7,9 @@ import Footer from "@/components/layout/Footer";
 
 // Images
 import careersBG from "../../public/images/careers/careers-bg.png";
+import students from "../../public/images/careers/students.jpg";
+import entryLevel from "../../public/images/careers/entry-level-professionals.jpg";
+import professionals from "../../public/images/careers/experienced-professionals.jpg";
 // SVG
 import mailIcon from "../../public/images/careers/mail-icon.svg";
 
@@ -90,7 +93,122 @@ export default function Careers() {
           className="section-container bg-white py-12
           sm:py-24"
           id="threecards-section"
-        ></section>
+        >
+          <h3
+            className="text-xl 
+            md:text-3xl"
+          >
+            Discover the job opportunities at Matrix Software Solutions
+          </h3>
+
+          {/* Start Flex Card Container */}
+          <div
+            className="flex flex-col space-x-0 space-y-4 mt-6 
+            lg:flex-row lg:space-y-0 lg:space-x-4"
+          >
+            {/* Item 1 */}
+            <div
+              className="w-full relative drop-shadow h-[100vw]
+              sm:h-[38rem] md:h-[42rem] lg:h-[30rem] xl:h-[34rem]"
+            >
+              {/* Card Content */}
+              <div className="absolute w-full h-full bg-white z-10">
+                {/* Image */}
+                <Image src={students} alt={students} />
+                {/* Text */}
+                <div
+                  className="px-4 py-3
+                  sm:py-6 md:px-6 2xl:px-12"
+                >
+                  <h4
+                    className="text-xl font-sansMedium
+                    sm:text-2xl"
+                  >
+                    OJT/Interns Students
+                  </h4>
+                  <p
+                    className="text-soft mt-2 text-sm
+                    sm:mt-6 sm:text-base"
+                  >
+                    Gain valuable experience and enhance your skills through a
+                    diverse range of internships or full-time positions designed
+                    for both undergraduate and graduate students.
+                  </p>
+                </div>
+              </div>
+              {/* Back Color */}
+              <div className="absolute bg-primary h-full w-full ml-1 mt-1"></div>
+            </div>
+
+            {/* Item 2 */}
+            <div
+              className="w-full relative drop-shadow h-[100vw]
+              sm:h-[38rem] md:h-[42rem] lg:h-[30rem] xl:h-[34rem]"
+            >
+              {/* Card Content */}
+              <div className="absolute w-full h-full bg-white z-10">
+                {/* Image */}
+                <Image src={entryLevel} alt={entryLevel} />
+                {/* Text */}
+                <div
+                  className="px-4 py-3
+                  sm:py-6 md:px-6 2xl:px-12"
+                >
+                  <h4
+                    className="text-xl font-sansMedium
+                    sm:text-2xl"
+                  >
+                    Entry-Level Professionals
+                  </h4>
+                  <p
+                    className="text-soft mt-2 text-sm
+                    sm:mt-6 sm:text-base"
+                  >
+                    Share your skills in business and technology, and let your
+                    ambition guide you as you strive for success.
+                  </p>
+                </div>
+              </div>
+              {/* Back Color */}
+              <div className="absolute bg-primary h-full w-full ml-1 mt-1"></div>
+            </div>
+
+            {/* Item 3 */}
+            <div
+              className="w-full relative drop-shadow h-[100vw]
+              sm:h-[38rem] md:h-[42rem] lg:h-[30rem] xl:h-[34rem]"
+            >
+              {/* Card Content */}
+              <div className="absolute w-full h-full bg-white z-10">
+                {/* Image */}
+                <Image src={professionals} alt={professionals} />
+                {/* Text */}
+                <div
+                  className="px-4 py-3
+                  sm:py-6 md:px-6 2xl:px-12"
+                >
+                  <h4
+                    className="text-xl font-sansMedium
+                    sm:text-2xl"
+                  >
+                    Experienced Professional
+                  </h4>
+                  <p
+                    className="text-soft mt-2 text-sm
+                    sm:mt-6 sm:text-base"
+                  >
+                    Expand your skills and knowledge by working closely with
+                    major clients, using your expertise to find innovative
+                    solutions to their most pressing challenges.
+                  </p>
+                </div>
+              </div>
+              {/* Back Color */}
+              <div className="absolute bg-primary h-full w-full ml-1 mt-1"></div>
+            </div>
+          </div>
+          {/* End Flex Card Container */}
+        </section>
         {/* ========= End Three Cards Section ========= */}
       </main>
       {/* ========= End Main Content ========= */}
