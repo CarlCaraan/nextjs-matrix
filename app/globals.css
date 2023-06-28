@@ -62,6 +62,9 @@
   .gradientBorder {
     border-image: linear-gradient(to right, #56b4d3, #80fb8d) 1;
   }
+  .gradientBorderVertical {
+    border-image: linear-gradient(to bottom, #56b4d3, #80fb8d) 1;
+  }
 }
 
 /* ========= Hamburger Button ========= */

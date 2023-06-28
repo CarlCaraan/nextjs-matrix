@@ -10,6 +10,8 @@ import careersBG from "../../public/images/careers/careers-bg.png";
 import students from "../../public/images/careers/students.jpg";
 import entryLevel from "../../public/images/careers/entry-level-professionals.jpg";
 import professionals from "../../public/images/careers/experienced-professionals.jpg";
+import php from "../../public/images/careers/php.png";
+
 // SVG
 import mailIcon from "../../public/images/careers/mail-icon.svg";
 
@@ -210,6 +212,34 @@ export default function Careers() {
           {/* End Flex Card Container */}
         </section>
         {/* ========= End Three Cards Section ========= */}
+
+        {/* ========= Start Sub Card Section ========= */}
+        <section
+          className="section-container mb-12
+          sm:mb-24"
+          id="sub-card"
+        >
+          {/* Start Flex Container */}
+          <div className="bg-card py-6 flex">
+            {/* Image */}
+            <divi className="px-24 py-4 basis-4/12 border-r-4 gradientBorderVertical">
+              <Image src={php} alt={php} />
+            </divi>
+            {/* Text */}
+            <div className="basis-8/12 px-24 py-12">
+              <h5 className="text-xl uppercase font-sansMedium">
+                Unlock the Web&#39;s Potential: Join Our Team of Innovative Web
+                Developers!
+              </h5>
+              <p className="text-xl text-soft mt-4">
+                We are seeking a skilled web developer proficient in HTML, CSS,
+                and basic JavaScript, with some experience in PHP.
+              </p>
+            </div>
+          </div>
+          {/* End Flex Container */}
+        </section>
+        {/* ========= End Sub Card Section ========= */}
       </main>
       {/* ========= End Main Content ========= */}
 
