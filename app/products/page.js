@@ -3,11 +3,6 @@ import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import Link from "next/link";
 
-// react-slick Library
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
 // Components
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
@@ -34,6 +29,11 @@ import project15 from "../../public/images/products/project15.png";
 // SVG
 import locationSVG from "../../public/images/landing_page/contact-section/location-svg-icon.svg";
 import telephoneSVG from "../../public/images/landing_page/contact-section/telephone-svg-icon.svg";
+
+// react-slick Library
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const projectImagesX = [
   {
