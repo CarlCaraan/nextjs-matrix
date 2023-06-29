@@ -239,7 +239,7 @@ export default function Careers() {
             {/* Text */}
             <div
               className="basis-8/12 px-4 py-6 text-center 
-              lg:text-center sm:px-24 sm:py-12"
+              lg:text-left sm:px-24 sm:py-12"
             >
               <h5
                 className="text-lg uppercase font-sansMedium 
