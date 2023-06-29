@@ -4,6 +4,7 @@ import Link from "next/link";
 // Components
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import Meta from "@/components/layout/Meta";
 
 // Images
 import careersBG from "../../public/images/careers/careers-bg.png";
@@ -18,7 +19,10 @@ import mailIcon from "../../public/images/careers/mail-icon.svg";
 export default function Careers() {
   return (
     <>
-      <title>Matrix Philippines - Careers</title>
+      {/* ========= Start Meta Generator ========= */}
+      <Meta title={"Matrix Philippines - Careers"} />
+      {/* ========= End Meta Generator ========= */}
+
       {/* ========= Start Navigation ========= */}
       <Navbar />
       {/* ========= End Navigation ========= */}

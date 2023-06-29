@@ -5,6 +5,7 @@ import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ContactForm from "@/components/ContactForm";
+import Meta from "@/components/layout/Meta";
 
 // Images
 import arrowIcon from "../public/images/landing_page/arrow-icon-gradient.png";
@@ -27,6 +28,10 @@ import clockSVG from "../public/images/landing_page/contact-section/clock-svg-ic
 export default function Home() {
   return (
     <>
+      {/* ========= Start Meta Generator ========= */}
+      <Meta title={"Matrix Philippines - Software Solution for You"} />
+      {/* ========= End Meta Generator ========= */}
+
       {/* ========= Start Navigation ========= */}
       <Navbar />
       {/* ========= End Navigation ========= */}

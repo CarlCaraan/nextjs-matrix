@@ -4,6 +4,7 @@ import Link from "next/link";
 // Components
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import Meta from "@/components/layout/Meta";
 
 // Images
 import solutionsBG from "../../public/images/solutions/solutions-bg.jpg";
@@ -18,7 +19,10 @@ import enterpriseIcon from "../../public/images/solutions/enterprise-icon.svg";
 export default function Solutions() {
   return (
     <>
-      <title>Matrix Philippines - Solutions</title>
+      {/* ========= Start Meta Generator ========= */}
+      <Meta title={"Matrix Philippines - Solutions"} />
+      {/* ========= End Meta Generator ========= */}
+
       {/* ========= Start Navigation ========= */}
       <Navbar />
       {/* ========= End Navigation ========= */}

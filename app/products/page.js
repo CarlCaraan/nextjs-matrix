@@ -6,6 +6,7 @@ import Link from "next/link";
 // Components
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
+import Meta from "@/components/layout/Meta";
 
 // Images
 // X
@@ -145,7 +146,10 @@ export default function Products() {
 
   return (
     <>
-      <title>Matrix Philippines - Products</title>
+      {/* ========= Start Meta Generator ========= */}
+      <Meta title={"Matrix Philippines - Products"} />
+      {/* ========= End Meta Generator ========= */}
+
       {/* ========= Start Navigation ========= */}
       <Navbar />
       {/* ========= End Navigation ========= */}
