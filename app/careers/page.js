@@ -18,6 +18,7 @@ import mailIcon from "../../public/images/careers/mail-icon.svg";
 export default function Careers() {
   return (
     <>
+      <title>Matrix Philippines - Careers</title>
       {/* ========= Start Navigation ========= */}
       <Navbar />
       {/* ========= End Navigation ========= */}

@@ -145,6 +145,7 @@ export default function Products() {
 
   return (
     <>
+      <title>Matrix Philippines - Products</title>
       {/* ========= Start Navigation ========= */}
       <Navbar />
       {/* ========= End Navigation ========= */}

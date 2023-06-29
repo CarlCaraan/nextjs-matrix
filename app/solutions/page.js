@@ -18,6 +18,7 @@ import enterpriseIcon from "../../public/images/solutions/enterprise-icon.svg";
 export default function Solutions() {
   return (
     <>
+      <title>Matrix Philippines - Solutions</title>
       {/* ========= Start Navigation ========= */}
       <Navbar />
       {/* ========= End Navigation ========= */}
