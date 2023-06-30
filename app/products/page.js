@@ -9,7 +9,7 @@ import Navbar from "@/components/layout/Navbar";
 import Meta from "@/components/layout/Meta";
 
 // Images
-// X
+// Set A
 import project0 from "../../public/images/products/project0.jpg";
 import project1 from "../../public/images/products/project1.jpg";
 import project2 from "../../public/images/products/project2.png";
@@ -18,7 +18,7 @@ import project4 from "../../public/images/products/project4.png";
 import project5 from "../../public/images/products/project5.png";
 import project6 from "../../public/images/products/project6.png";
 import project7 from "../../public/images/products/project7.png";
-// Y
+// Set B
 import project8 from "../../public/images/products/project8.png";
 import project9 from "../../public/images/products/project9.png";
 import project10 from "../../public/images/products/project10.png";
@@ -27,6 +27,7 @@ import project12 from "../../public/images/products/project12.png";
 import project13 from "../../public/images/products/project13.png";
 import project14 from "../../public/images/products/project14.png";
 import project15 from "../../public/images/products/project15.png";
+
 // SVG
 import locationSVG from "../../public/images/landing_page/contact-section/location-svg-icon.svg";
 import telephoneSVG from "../../public/images/landing_page/contact-section/telephone-svg-icon.svg";
