@@ -39,6 +39,7 @@ export default function Careers() {
             className="absolute bg-no-repeat bg-center top-0 w-full h-full object-cover"
             src={careersBG}
             alt="careers-bg"
+            loading="lazy"
           />
           {/* BG Overlay */}
           <div className="absolute inset-0 bg-teal-900 opacity-70"></div>
@@ -121,7 +122,7 @@ export default function Careers() {
               {/* Card Content */}
               <div className="absolute w-full h-full bg-white z-10">
                 {/* Image */}
-                <Image src={students} alt={students} />
+                <Image src={students} alt={students} loading="lazy" />
                 {/* Text */}
                 <div
                   className="px-4 py-3
@@ -155,7 +156,7 @@ export default function Careers() {
               {/* Card Content */}
               <div className="absolute w-full h-full bg-white z-10">
                 {/* Image */}
-                <Image src={entryLevel} alt={entryLevel} />
+                <Image src={entryLevel} alt={entryLevel} loading="lazy" />
                 {/* Text */}
                 <div
                   className="px-4 py-3
@@ -188,7 +189,7 @@ export default function Careers() {
               {/* Card Content */}
               <div className="absolute w-full h-full bg-white z-10">
                 {/* Image */}
-                <Image src={professionals} alt={professionals} />
+                <Image src={professionals} alt={professionals} loading="lazy" />
                 {/* Text */}
                 <div
                   className="px-4 py-3
@@ -234,7 +235,7 @@ export default function Careers() {
               className="flex items-center px-[4.8vw] py-4 basis-4/12 justify-center
               lg:border-r-4 lg:gradientBorderVertical"
             >
-              <Image src={php} alt={php} />
+              <Image src={php} alt={php} loading="lazy" />
             </div>
             {/* Text */}
             <div

@@ -39,6 +39,7 @@ export default function Solutions() {
             className="absolute bg-no-repeat bg-center top-0 w-full h-full object-cover"
             src={solutionsBG}
             alt="solutions-bg"
+            loading="lazy"
           />
           {/* BG Overlay */}
           <div className="absolute inset-0 bg-teal-700 opacity-30"></div>
@@ -316,6 +317,7 @@ export default function Solutions() {
                 lg:mt-12 lg:mb-0"
                 src={contextBG}
                 alt="context-bg"
+                loading="lazy"
               />
             </div>
             {/* End Right Part */}
