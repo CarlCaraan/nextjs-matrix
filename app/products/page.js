@@ -253,7 +253,7 @@ export default function Products() {
               {/* Left Part */}
               <div
                 className="basis-1/2 py-4 flex flex-col space-y-2
-                md:border-r-2 sm:space-y-4 sm:py-8"
+                md:border-r-4 md:gradientBorderVertical sm:space-y-4 sm:py-8"
               >
                 {/* Address */}
                 <div className="flex gap-4">
