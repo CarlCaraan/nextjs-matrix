@@ -1,4 +1,5 @@
 import "./globals.css";
+import "../public/google6f58b8895f43efb3.html";
 
 // export const metadata = {
 //   title: "Matrix Philippines - Software Solution for You",
