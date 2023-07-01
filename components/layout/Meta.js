@@ -19,6 +19,12 @@ function Meta({ title }) {
       <meta name="robots" content="index, follow"></meta>
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"></meta>
       <meta name="language" content="English"></meta>
+
+      {/* Google search console verification */}
+      <meta
+        name="google-site-verification"
+        content="aZxL2aU9e_wvyo3AM7IBjmgnP1I61NefLYqI9xTXfl0"
+      />
     </Fragment>
   );
 }
