@@ -279,7 +279,10 @@ export default function Home() {
         {/* ========= End SubHerosection ========= */}
 
         {/* ========= Start Carousel Section ========= */}
-        <div className="bg-card rounded-b-[50px] 2xl:rounded-b-[25%] shadow-sm">
+        <div
+          className="bg-card rounded-b-[50px] shadow-sm 
+          2xl:rounded-b-[25%]"
+        >
           <section
             className="section-container py-12 
             sm:py-24"
