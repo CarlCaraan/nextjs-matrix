@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Components
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import ContactForm from "@/components/ContactForm";
 import Meta from "@/components/layout/Meta";
+import Navbar from "@/components/layout/Navbar";
+import ContactForm from "@/components/ContactForm";
+import Footer from "@/components/layout/Footer";
 
 // Images
 import arrowIcon from "../public/images/landing_page/arrow-icon-gradient.png";
