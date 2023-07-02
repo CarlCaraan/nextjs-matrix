@@ -38,7 +38,8 @@ function Footer() {
             <Link
               className="mt-4 mx-auto inline-block group
               sm:float-right sm:mx-0 sm:block"
-              href="/"
+              href="https://www.facebook.com/profile.php?id=100093822897571"
+              target="_blank"
             >
               <Image
                 className="block group-hover:hidden"
