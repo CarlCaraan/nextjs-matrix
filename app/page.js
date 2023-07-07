@@ -241,7 +241,10 @@ export default function Home() {
                 />
               </div>
               {/* ========= Desktop 4 Image ========= */}
-              <div className="ml-auto h-full hidden w-[31.5rem] 2xl:w-5/6 lg:block">
+              <div
+                className="ml-auto h-full hidden w-[31.5rem] 
+                2xl:w-5/6 lg:block"
+              >
                 {/* Start Image Wrapper */}
                 <div className="relative h-full">
                   <Image
