@@ -282,15 +282,12 @@ export default function Home() {
         {/* ========= End SubHerosection ========= */}
 
         {/* ========= Start Carousel Section ========= */}
-        <div
-          className="bg-card rounded-b-[50px] shadow-sm 
-          2xl:rounded-b-[25%]"
+        <section
+          className="bg-card rounded-b-[50px] shadow-sm py-12 
+          2xl:rounded-b-[25%] sm:py-24"
+          id="carousel-section"
         >
-          <section
-            className="section-container py-12 
-            sm:py-24"
-            id="carousel-section"
-          >
+          <div className="section-container ">
             <p
               className="text-base text-soft uppercase font-sansMedium text-center
               md:text-[18px]"
@@ -307,8 +304,8 @@ export default function Home() {
 
             {/* Start Flex Container */}
             <div
-              className="flex flex-col gap-4 mt-16 
-              lg:flex-row"
+              className="flex flex-col mt-16 space-x-0 space-y-12
+              lg:flex-row lg:space-x-4 lg:space-y-0"
             >
               <div className="basis-1/3">
                 <Image
@@ -316,7 +313,10 @@ export default function Home() {
                   src={webDesignSVG}
                   alt="webdesign-svg"
                 />
-                <h4 className="mt-12 text-dark text-2xl font-sansBold text-center">
+                <h4
+                  className="mt-8 text-dark text-2xl font-sansBold text-center
+                  lg:mt-12"
+                >
                   Web Design
                 </h4>
                 <p className="text-soft font-sansLight text-center mt-4">
@@ -329,7 +329,10 @@ export default function Home() {
               </div>
               <div className="basis-1/3">
                 <Image className="mx-auto" src={websiteSVG} alt="website-svg" />
-                <h4 className="mt-12 text-dark text-2xl font-sansBold text-center">
+                <h4
+                  className="mt-0 text-dark text-2xl font-sansBold text-center
+                  lg:mt-12"
+                >
                   Website
                 </h4>
                 <p className="text-soft font-sansLight text-center mt-4">
@@ -346,7 +349,10 @@ export default function Home() {
                   src={logoDesignSVG}
                   alt="logodesign-svg"
                 />
-                <h4 className="mt-12 text-dark text-2xl font-sansBold text-center">
+                <h4
+                  className="mt-6 text-dark text-2xl font-sansBold text-center
+                  lg:mt-12"
+                >
                   Logo Design
                 </h4>
                 <p className="text-soft font-sansLight text-center mt-4">
@@ -359,8 +365,8 @@ export default function Home() {
               </div>
             </div>
             {/* End Flex Container */}
-          </section>
-        </div>
+          </div>
+        </section>
         {/* ========= End Carousel Section ========= */}
 
         {/* ========= Start Contact Section ========= */}
